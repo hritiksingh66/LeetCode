@@ -1,46 +1,47 @@
 class Solution {
-
-    // Return the number of maximum bouquets that can be made on day mid.
-    private int getNumOfBouquets(int[] bloomDay, int mid, int k) {
-        int numOfBouquets = 0;
-        int count = 0;
-
-        for (int i = 0; i < bloomDay.length; i++) {
-            // If the flower is bloomed, add to the set. Else reset the count.
-            if (bloomDay[i] <= mid) {
-                count++;
-            } else {
-                count = 0;
+    
+    public int canMakeMBouq(int[] bloomDay,int mid, int k){
+        int bouqCount = 0;
+        int consecutive_count = 0;
+        for(int i = 0; i<bloomDay.length;i++){
+            if(bloomDay[i]<=mid){
+                consecutive_count++;
+            }else{
+                consecutive_count=0;
             }
-
-            if (count == k) {
-                numOfBouquets++;
-                count = 0;
+            
+            if(consecutive_count == k){
+                bouqCount++;
+                consecutive_count=0;
             }
         }
-
-        return numOfBouquets;
+        
+        return bouqCount;
     }
-
-    public int minDays(int[] bloomDay, int m, int k) {
-        int start = 0;
-        int end = 0;
-        for (int day : bloomDay) {
-            end = Math.max(end, day);
+    
+    public int minDays(int[] bloomDay, int m, int k){
+        int n = bloomDay.length;
+        
+        int start_day = 0;
+        int end_day = bloomDay[0];
+        for(int i=0; i<bloomDay.length; i++){
+            if(end_day < bloomDay[i])
+                end_day = bloomDay[i];
         }
-
+        
         int minDays = -1;
-        while (start <= end) {
-            int mid = (start + end) / 2;
-
-            if (getNumOfBouquets(bloomDay, mid, k) >= m) {
+        
+        while(start_day<=end_day){
+            int mid = start_day + (end_day - start_day)/2;
+            
+            if(canMakeMBouq(bloomDay,mid,k) >= m){
                 minDays = mid;
-                end = mid - 1;
-            } else {
-                start = mid + 1;
+                end_day = mid-1;
+            }else{
+                start_day =mid+1;
             }
         }
-
+        
         return minDays;
     }
 }
