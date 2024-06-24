@@ -1,6 +1,7 @@
-// Approach - 1
+// Approach - 2
+// In this approach we did a liitle change in approach 1 i.e, we dont need to use any extra space 
+// instead of that ... mark the flipped index of nums with any  integer value other than 0 and 1
 // TC = O(n)  as we are iterating only one for loop n times
-// SC = O(n)  as we declared a new boolean of size n , means using extra space 
 class Solution{
     public int minKBitFlips(int[] nums, int k){
         
@@ -10,11 +11,9 @@ class Solution{
         
         int flipCountFromPastFori = 0;
         
-        boolean[] isFlipped = new boolean[n];
-        Arrays.fill(isFlipped,false);
-        
+
         for(int i = 0; i < n; i++){
-            if(i>=k && isFlipped[i-k] == true){
+            if(i>=k && nums[i-k] == 5){
                 flipCountFromPastFori--;           
             }
             
@@ -24,7 +23,7 @@ class Solution{
                 }
                 flipCountFromPastFori++;
                 flips++;
-                isFlipped[i] = true;
+                nums[i] = 5;
             }
         }
         return flips;
