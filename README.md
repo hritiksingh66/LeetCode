@@ -19,6 +19,7 @@
 # Array
 |  |
 | ------- |
+| [0643-maximum-average-subarray-i](https://github.com/hritiksingh66/LeetCode/tree/master/0643-maximum-average-subarray-i) |
 | [1798-max-number-of-k-sum-pairs](https://github.com/hritiksingh66/LeetCode/tree/master/1798-max-number-of-k-sum-pairs) |
 # Hash Table
 |  |
@@ -32,3 +33,7 @@
 |  |
 | ------- |
 | [1798-max-number-of-k-sum-pairs](https://github.com/hritiksingh66/LeetCode/tree/master/1798-max-number-of-k-sum-pairs) |
+# Sliding Window
+|  |
+| ------- |
+| [0643-maximum-average-subarray-i](https://github.com/hritiksingh66/LeetCode/tree/master/0643-maximum-average-subarray-i) |
