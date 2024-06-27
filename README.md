@@ -2,6 +2,7 @@
 |  |
 | ------- |
 | [0937-online-stock-span](https://github.com/hritiksingh66/LeetCode/tree/master/0937-online-stock-span) |
+| [0739-daily-temperatures](https://github.com/hritiksingh66/LeetCode/tree/master/0739-daily-temperatures) |
 
 
 # Design
@@ -11,6 +12,7 @@
 # Monotonic Stack
 |  |
 | ------- |
+| [0739-daily-temperatures](https://github.com/hritiksingh66/LeetCode/tree/master/0739-daily-temperatures) |
 | [0937-online-stock-span](https://github.com/hritiksingh66/LeetCode/tree/master/0937-online-stock-span) |
 # Data Stream
 |  |
@@ -20,6 +22,7 @@
 |  |
 | ------- |
 | [0643-maximum-average-subarray-i](https://github.com/hritiksingh66/LeetCode/tree/master/0643-maximum-average-subarray-i) |
+| [0739-daily-temperatures](https://github.com/hritiksingh66/LeetCode/tree/master/0739-daily-temperatures) |
 | [1798-max-number-of-k-sum-pairs](https://github.com/hritiksingh66/LeetCode/tree/master/1798-max-number-of-k-sum-pairs) |
 # Hash Table
 |  |
