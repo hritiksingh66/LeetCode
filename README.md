@@ -28,6 +28,7 @@
 # Two Pointers
 |  |
 | ------- |
+| [0392-is-subsequence](https://github.com/hritiksingh66/LeetCode/tree/master/0392-is-subsequence) |
 | [1798-max-number-of-k-sum-pairs](https://github.com/hritiksingh66/LeetCode/tree/master/1798-max-number-of-k-sum-pairs) |
 # Sorting
 |  |
@@ -65,3 +66,11 @@
 |  |
 | ------- |
 | [1916-find-center-of-star-graph](https://github.com/hritiksingh66/LeetCode/tree/master/1916-find-center-of-star-graph) |
+# String
+|  |
+| ------- |
+| [0392-is-subsequence](https://github.com/hritiksingh66/LeetCode/tree/master/0392-is-subsequence) |
+# Dynamic Programming
+|  |
+| ------- |
+| [0392-is-subsequence](https://github.com/hritiksingh66/LeetCode/tree/master/0392-is-subsequence) |
