@@ -10,12 +10,12 @@ class Solution {
             if(nums[j]==1){
                 currCount++;
                 j++;
-                result = Math.max(result,currCount);
             }else{
                 currCount = 0;
                 j++;
                 i=j;
             }
+            result = Math.max(result,currCount);
         }
         return result;
     }
