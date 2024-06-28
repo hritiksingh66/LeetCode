@@ -9,12 +9,14 @@ class Solution {
         while(j<n){
             if(nums[j]==1){
                 currCount++;
-            }else{
-                currCount = 0;
+                j++;
+                continue;
             }
-            j++;
             result = Math.max(result,currCount);
+            currCount = 0;
+            j++;
         }
+        result = Math.max(result,currCount);
         return result;
     }
 }
