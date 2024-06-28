@@ -14,11 +14,14 @@ class Solution {
 
         Arrays.sort(arr);
 
-        int result = 0;
+        long result = 0;
+
+        long value = 1;
 
         for(int i = 0 ; i < n ; i++){
 
-            result+=(i+1)*(arr[i]);
+            result+=(arr[i])*value;
+            value++;
         }
 
         return result;
