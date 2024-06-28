@@ -77,3 +77,14 @@
 |  |
 | ------- |
 | [0392-is-subsequence](https://github.com/hritiksingh66/LeetCode/tree/master/0392-is-subsequence) |
+<!---LeetCode Topics Start-->
+# LeetCode Topics
+## String
+|  |
+| ------- |
+| [1128-remove-all-adjacent-duplicates-in-string](https://github.com/hritiksingh66/LeetCode/tree/master/1128-remove-all-adjacent-duplicates-in-string) |
+## Stack
+|  |
+| ------- |
+| [1128-remove-all-adjacent-duplicates-in-string](https://github.com/hritiksingh66/LeetCode/tree/master/1128-remove-all-adjacent-duplicates-in-string) |
+<!---LeetCode Topics End-->
