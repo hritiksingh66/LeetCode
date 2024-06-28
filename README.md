@@ -109,10 +109,12 @@
 |  |
 | ------- |
 | [0224-basic-calculator](https://github.com/hritiksingh66/LeetCode/tree/master/0224-basic-calculator) |
+| [0326-power-of-three](https://github.com/hritiksingh66/LeetCode/tree/master/0326-power-of-three) |
 ## Recursion
 |  |
 | ------- |
 | [0224-basic-calculator](https://github.com/hritiksingh66/LeetCode/tree/master/0224-basic-calculator) |
+| [0326-power-of-three](https://github.com/hritiksingh66/LeetCode/tree/master/0326-power-of-three) |
 ## Array
 |  |
 | ------- |
