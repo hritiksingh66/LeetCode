@@ -87,4 +87,20 @@
 |  |
 | ------- |
 | [1128-remove-all-adjacent-duplicates-in-string](https://github.com/hritiksingh66/LeetCode/tree/master/1128-remove-all-adjacent-duplicates-in-string) |
+## Greedy
+|  |
+| ------- |
+| [2379-maximum-total-importance-of-roads](https://github.com/hritiksingh66/LeetCode/tree/master/2379-maximum-total-importance-of-roads) |
+## Graph
+|  |
+| ------- |
+| [2379-maximum-total-importance-of-roads](https://github.com/hritiksingh66/LeetCode/tree/master/2379-maximum-total-importance-of-roads) |
+## Sorting
+|  |
+| ------- |
+| [2379-maximum-total-importance-of-roads](https://github.com/hritiksingh66/LeetCode/tree/master/2379-maximum-total-importance-of-roads) |
+## Heap (Priority Queue)
+|  |
+| ------- |
+| [2379-maximum-total-importance-of-roads](https://github.com/hritiksingh66/LeetCode/tree/master/2379-maximum-total-importance-of-roads) |
 <!---LeetCode Topics End-->
