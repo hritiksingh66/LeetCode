@@ -82,10 +82,12 @@
 ## String
 |  |
 | ------- |
+| [0224-basic-calculator](https://github.com/hritiksingh66/LeetCode/tree/master/0224-basic-calculator) |
 | [1128-remove-all-adjacent-duplicates-in-string](https://github.com/hritiksingh66/LeetCode/tree/master/1128-remove-all-adjacent-duplicates-in-string) |
 ## Stack
 |  |
 | ------- |
+| [0224-basic-calculator](https://github.com/hritiksingh66/LeetCode/tree/master/0224-basic-calculator) |
 | [1128-remove-all-adjacent-duplicates-in-string](https://github.com/hritiksingh66/LeetCode/tree/master/1128-remove-all-adjacent-duplicates-in-string) |
 ## Greedy
 |  |
@@ -103,4 +105,12 @@
 |  |
 | ------- |
 | [2379-maximum-total-importance-of-roads](https://github.com/hritiksingh66/LeetCode/tree/master/2379-maximum-total-importance-of-roads) |
+## Math
+|  |
+| ------- |
+| [0224-basic-calculator](https://github.com/hritiksingh66/LeetCode/tree/master/0224-basic-calculator) |
+## Recursion
+|  |
+| ------- |
+| [0224-basic-calculator](https://github.com/hritiksingh66/LeetCode/tree/master/0224-basic-calculator) |
 <!---LeetCode Topics End-->
