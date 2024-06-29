@@ -116,6 +116,7 @@
 ## Recursion
 |  |
 | ------- |
+| [0206-reverse-linked-list](https://github.com/hritiksingh66/LeetCode/tree/master/0206-reverse-linked-list) |
 | [0224-basic-calculator](https://github.com/hritiksingh66/LeetCode/tree/master/0224-basic-calculator) |
 | [0326-power-of-three](https://github.com/hritiksingh66/LeetCode/tree/master/0326-power-of-three) |
 ## Array
@@ -157,6 +158,7 @@
 ## Linked List
 |  |
 | ------- |
+| [0206-reverse-linked-list](https://github.com/hritiksingh66/LeetCode/tree/master/0206-reverse-linked-list) |
 | [0328-odd-even-linked-list](https://github.com/hritiksingh66/LeetCode/tree/master/0328-odd-even-linked-list) |
 | [2216-delete-the-middle-node-of-a-linked-list](https://github.com/hritiksingh66/LeetCode/tree/master/2216-delete-the-middle-node-of-a-linked-list) |
 <!---LeetCode Topics End-->
