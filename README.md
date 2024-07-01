@@ -134,6 +134,7 @@
 | [1293-three-consecutive-odds](https://github.com/hritiksingh66/LeetCode/tree/master/1293-three-consecutive-odds) |
 | [1833-find-the-highest-altitude](https://github.com/hritiksingh66/LeetCode/tree/master/1833-find-the-highest-altitude) |
 | [2102-find-the-middle-index-in-array](https://github.com/hritiksingh66/LeetCode/tree/master/2102-find-the-middle-index-in-array) |
+| [2144-maximum-difference-between-increasing-elements](https://github.com/hritiksingh66/LeetCode/tree/master/2144-maximum-difference-between-increasing-elements) |
 ## Prefix Sum
 |  |
 | ------- |
