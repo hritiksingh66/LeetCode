@@ -11,11 +11,10 @@ class Solution {
             if(nums[i]<nums[j]){
                 int diff = (nums[j]-nums[i]);
                 result = Math.max(result,diff);
-                j++;
             }else{
                 i=j;
-                j++;
             }
+            j++;
         }
         return result;
     }
