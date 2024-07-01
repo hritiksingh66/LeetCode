@@ -1,61 +1,44 @@
 // Company Asked :- AMAZON
-class Solution{
+import java.util.Stack;
 
-    int[] getNSL(int[] arr , int n){
-        int[] result = new int[n];
-        Stack<Integer> st = new Stack<>();
-        for (int i = 0; i < n; i++) {
-            while (!st.isEmpty() && arr[st.peek()] > arr[i]) {
-                st.pop();
-            }
-            result[i] = st.isEmpty() ? -1 : st.peek();
-            st.push(i);
-        }
-        return result;
-    }
-
-
-    int[] getNSR(int[] arr, int n) {
-        int[] result = new int[n];
-        Stack<Integer> st = new Stack<>();
-        for (int i = n - 1; i >= 0; i--) {
-            while (!st.isEmpty() && arr[st.peek()] >= arr[i]) {
-                st.pop();
-            }
-            result[i] = st.isEmpty() ? n : st.peek();
-            st.push(i);
-        }
-        return result;
-    }
-
-
-    public int sumSubarrayMins(int[] arr){
-
+class Solution {
+    public int sumSubarrayMins(int[] arr) {
         int n = arr.length;
-        int[] NSL = getNSL(arr,n);
-        int[] NSR = getNSR(arr,n);
-
-        // System.out.println(Arrays.toString(NSL));
-        // System.out.println(Arrays.toString(NSR));
-
-        long sum = 0;
-
-        int M = 1_000_000_007;
-
-        for(int i = 0; i < n; i++){
-            long ls = i - NSL[i]; // left me kitne elements honge
-            long rs = NSR[i]-i;  //  Right me kitne elements honge
-
-            long totalWays = ls*rs;
-
-            // totalSubways number subarray honge jiska min arr[i] hoga hmara
-
-            long totalSum = arr[i] * totalWays;
-            
-            sum = (sum + totalSum) % M;
-
+        Stack<Integer> stack = new Stack<>();
+        int[] left = new int[n];
+        int[] right = new int[n];
+        
+        // Fill left array
+        for (int i = 0; i < n; i++) {
+            while (!stack.isEmpty() && arr[stack.peek()] > arr[i]) {
+                stack.pop();
+            }
+            left[i] = stack.isEmpty() ? -1 : stack.peek();
+            stack.push(i);
         }
-
-        return (int)sum;    
+        
+        stack.clear(); // Clear the stack to reuse it
+        
+        // Fill right array
+        for (int i = n - 1; i >= 0; i--) {
+            while (!stack.isEmpty() && arr[stack.peek()] >= arr[i]) {
+                stack.pop();
+            }
+            right[i] = stack.isEmpty() ? n : stack.peek();
+            stack.push(i);
+        }
+        
+        int sum = 0;
+        int M = 1_000_000_007;
+        
+        for (int i = 0; i < n; i++) {
+            int ls = i - left[i]; // Number of elements to the left
+            int rs = right[i] - i; // Number of elements to the right
+            int totalWays = ls * rs; // Total number of subarrays where arr[i] is the minimum
+            long totalSum = (long) arr[i] * totalWays; // Sum contributed by arr[i]
+            sum = (int) ((sum + totalSum) % M);
+        }
+        
+        return sum;
     }
 }
