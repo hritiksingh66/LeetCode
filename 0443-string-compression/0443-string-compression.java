@@ -8,13 +8,11 @@ class Solution {
         while(i < n){
             char curr_char = chars[i];
             int  count = 0;
-
             //Find count of duplicates
             while(i < n && chars[i] == curr_char){
                 count++;
                 i++;
             }
-
             //Do the Assigning work
 
             chars[index++] = curr_char;
