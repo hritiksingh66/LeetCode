@@ -84,6 +84,7 @@
 | ------- |
 | [0151-reverse-words-in-a-string](https://github.com/hritiksingh66/LeetCode/tree/master/0151-reverse-words-in-a-string) |
 | [0224-basic-calculator](https://github.com/hritiksingh66/LeetCode/tree/master/0224-basic-calculator) |
+| [0443-string-compression](https://github.com/hritiksingh66/LeetCode/tree/master/0443-string-compression) |
 | [1128-remove-all-adjacent-duplicates-in-string](https://github.com/hritiksingh66/LeetCode/tree/master/1128-remove-all-adjacent-duplicates-in-string) |
 ## Stack
 |  |
@@ -166,6 +167,7 @@
 | ------- |
 | [0151-reverse-words-in-a-string](https://github.com/hritiksingh66/LeetCode/tree/master/0151-reverse-words-in-a-string) |
 | [0350-intersection-of-two-arrays-ii](https://github.com/hritiksingh66/LeetCode/tree/master/0350-intersection-of-two-arrays-ii) |
+| [0443-string-compression](https://github.com/hritiksingh66/LeetCode/tree/master/0443-string-compression) |
 | [2216-delete-the-middle-node-of-a-linked-list](https://github.com/hritiksingh66/LeetCode/tree/master/2216-delete-the-middle-node-of-a-linked-list) |
 ## Simulation
 |  |
