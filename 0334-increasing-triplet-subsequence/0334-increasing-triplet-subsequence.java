@@ -7,10 +7,8 @@ class Solution {
         for(int num3 : nums){
             if(num3 <= num1){
                 num1 = num3;
-                continue;
             }else if(num3 <= num2){
                 num2 = num3;
-                continue;
             }else{
                 return true;
             }
