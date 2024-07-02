@@ -143,6 +143,7 @@
 | [1833-find-the-highest-altitude](https://github.com/hritiksingh66/LeetCode/tree/master/1833-find-the-highest-altitude) |
 | [2102-find-the-middle-index-in-array](https://github.com/hritiksingh66/LeetCode/tree/master/2102-find-the-middle-index-in-array) |
 | [2144-maximum-difference-between-increasing-elements](https://github.com/hritiksingh66/LeetCode/tree/master/2144-maximum-difference-between-increasing-elements) |
+| [2211-k-radius-subarray-averages](https://github.com/hritiksingh66/LeetCode/tree/master/2211-k-radius-subarray-averages) |
 ## Prefix Sum
 |  |
 | ------- |
@@ -210,6 +211,7 @@
 | ------- |
 | [0209-minimum-size-subarray-sum](https://github.com/hritiksingh66/LeetCode/tree/master/0209-minimum-size-subarray-sum) |
 | [1567-maximum-number-of-vowels-in-a-substring-of-given-length](https://github.com/hritiksingh66/LeetCode/tree/master/1567-maximum-number-of-vowels-in-a-substring-of-given-length) |
+| [2211-k-radius-subarray-averages](https://github.com/hritiksingh66/LeetCode/tree/master/2211-k-radius-subarray-averages) |
 ## Hash Table
 |  |
 | ------- |
