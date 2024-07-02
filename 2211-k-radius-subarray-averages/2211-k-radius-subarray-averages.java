@@ -13,24 +13,35 @@ class Solution {
             return result;
         }
 
-        long[] prefixSum = new long[n];
-        prefixSum[0] = nums[0];
-        for(int i = 1 ; i < n ; i++){
-            prefixSum[i]=nums[i]+prefixSum[i-1];
+        long windowSum = 0;
+        int left = 0;
+        int right = 2*k;
+        int i = k;
+
+        for(int j = left; j <= right; j++){
+            windowSum += nums[j];
+
         }
 
-        for(int i = k ; i <= n-k-1; i++){
+        int count = 2*k+1;
+        result[i] = (int)(windowSum/(count));
+        i++;
 
-            int left_idx = i-k;
-            int right_idx = i+k;
+        right++;
 
-            long sum = prefixSum[right_idx];
+        while(right < n){
+            int out_of_window = nums[left];
+            int came_to_window = nums[right];
 
-            if(left_idx > 0){
-                sum -= prefixSum[left_idx-1];
-            }
-            result[i] = (int)(sum/(2*k+1));
+            windowSum = windowSum + came_to_window - out_of_window;
+
+            result[i] = (int)(windowSum/(count));
+
+            i++;
+            right++;
+            left++;
         }
+
         return result;
     }
 }
