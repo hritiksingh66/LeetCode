@@ -5,14 +5,14 @@ class Solution {
 
         Arrays.sort(nums);
 
-        if(n<=3){
+        if(n<=4){
             return 0;
         }
 
-        int result  = Integer.MAX_VALUE;
+        int result  = nums[n-1]-nums[0];
 
-        for(int i = 1 ; i <= 4; i++){
-            result = Math.min(result , Math.abs(nums[n - i] - nums[ 4 - i]));
+        for(int i = 0 ; i <= 3; i++){
+            result = Math.min(result ,nums[n+i-4]-nums[i]);
         }
 
         return result;
