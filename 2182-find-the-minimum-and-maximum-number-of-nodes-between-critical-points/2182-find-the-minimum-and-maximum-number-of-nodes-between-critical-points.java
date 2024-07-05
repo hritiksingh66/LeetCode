@@ -38,21 +38,10 @@ class Solution {
             curr = curr.next;
         }
 
-        System.out.print(prevCriticalPoint);
-        System.out.print(firstCriticalPoint);
-
-        int[] result = new int[2];
-
-
         if(minDist == Integer.MAX_VALUE){
-            result[0] = -1;
-            result[1] = -1;
-            return result;
-        }else{
-            result[0] = minDist;
-            result[1] = (prevCriticalPoint - firstCriticalPoint);
+            return new int[]{-1,-1};
         }
 
-        return result;
+        return new int[]{minDist , prevCriticalPoint - firstCriticalPoint};
     }
 }
