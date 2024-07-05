@@ -135,6 +135,7 @@
 | [0209-minimum-size-subarray-sum](https://github.com/hritiksingh66/LeetCode/tree/master/0209-minimum-size-subarray-sum) |
 | [0215-kth-largest-element-in-an-array](https://github.com/hritiksingh66/LeetCode/tree/master/0215-kth-largest-element-in-an-array) |
 | [0238-product-of-array-except-self](https://github.com/hritiksingh66/LeetCode/tree/master/0238-product-of-array-except-self) |
+| [0287-find-the-duplicate-number](https://github.com/hritiksingh66/LeetCode/tree/master/0287-find-the-duplicate-number) |
 | [0334-increasing-triplet-subsequence](https://github.com/hritiksingh66/LeetCode/tree/master/0334-increasing-triplet-subsequence) |
 | [0350-intersection-of-two-arrays-ii](https://github.com/hritiksingh66/LeetCode/tree/master/0350-intersection-of-two-arrays-ii) |
 | [0485-max-consecutive-ones](https://github.com/hritiksingh66/LeetCode/tree/master/0485-max-consecutive-ones) |
@@ -175,6 +176,7 @@
 |  |
 | ------- |
 | [0151-reverse-words-in-a-string](https://github.com/hritiksingh66/LeetCode/tree/master/0151-reverse-words-in-a-string) |
+| [0287-find-the-duplicate-number](https://github.com/hritiksingh66/LeetCode/tree/master/0287-find-the-duplicate-number) |
 | [0350-intersection-of-two-arrays-ii](https://github.com/hritiksingh66/LeetCode/tree/master/0350-intersection-of-two-arrays-ii) |
 | [0443-string-compression](https://github.com/hritiksingh66/LeetCode/tree/master/0443-string-compression) |
 | [2216-delete-the-middle-node-of-a-linked-list](https://github.com/hritiksingh66/LeetCode/tree/master/2216-delete-the-middle-node-of-a-linked-list) |
@@ -217,6 +219,7 @@
 |  |
 | ------- |
 | [0209-minimum-size-subarray-sum](https://github.com/hritiksingh66/LeetCode/tree/master/0209-minimum-size-subarray-sum) |
+| [0287-find-the-duplicate-number](https://github.com/hritiksingh66/LeetCode/tree/master/0287-find-the-duplicate-number) |
 | [0350-intersection-of-two-arrays-ii](https://github.com/hritiksingh66/LeetCode/tree/master/0350-intersection-of-two-arrays-ii) |
 | [1046-max-consecutive-ones-iii](https://github.com/hritiksingh66/LeetCode/tree/master/1046-max-consecutive-ones-iii) |
 ## Sliding Window
@@ -232,4 +235,8 @@
 | ------- |
 | [0350-intersection-of-two-arrays-ii](https://github.com/hritiksingh66/LeetCode/tree/master/0350-intersection-of-two-arrays-ii) |
 | [0835-linked-list-components](https://github.com/hritiksingh66/LeetCode/tree/master/0835-linked-list-components) |
+## Bit Manipulation
+|  |
+| ------- |
+| [0287-find-the-duplicate-number](https://github.com/hritiksingh66/LeetCode/tree/master/0287-find-the-duplicate-number) |
 <!---LeetCode Topics End-->
