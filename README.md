@@ -189,6 +189,7 @@
 | [0206-reverse-linked-list](https://github.com/hritiksingh66/LeetCode/tree/master/0206-reverse-linked-list) |
 | [0328-odd-even-linked-list](https://github.com/hritiksingh66/LeetCode/tree/master/0328-odd-even-linked-list) |
 | [0835-linked-list-components](https://github.com/hritiksingh66/LeetCode/tree/master/0835-linked-list-components) |
+| [2182-find-the-minimum-and-maximum-number-of-nodes-between-critical-points](https://github.com/hritiksingh66/LeetCode/tree/master/2182-find-the-minimum-and-maximum-number-of-nodes-between-critical-points) |
 | [2216-delete-the-middle-node-of-a-linked-list](https://github.com/hritiksingh66/LeetCode/tree/master/2216-delete-the-middle-node-of-a-linked-list) |
 | [2299-merge-nodes-in-between-zeros](https://github.com/hritiksingh66/LeetCode/tree/master/2299-merge-nodes-in-between-zeros) |
 ## Union Find
