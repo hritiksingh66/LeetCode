@@ -176,6 +176,7 @@
 ## Two Pointers
 |  |
 | ------- |
+| [0086-partition-list](https://github.com/hritiksingh66/LeetCode/tree/master/0086-partition-list) |
 | [0151-reverse-words-in-a-string](https://github.com/hritiksingh66/LeetCode/tree/master/0151-reverse-words-in-a-string) |
 | [0287-find-the-duplicate-number](https://github.com/hritiksingh66/LeetCode/tree/master/0287-find-the-duplicate-number) |
 | [0350-intersection-of-two-arrays-ii](https://github.com/hritiksingh66/LeetCode/tree/master/0350-intersection-of-two-arrays-ii) |
@@ -190,6 +191,7 @@
 |  |
 | ------- |
 | [0024-swap-nodes-in-pairs](https://github.com/hritiksingh66/LeetCode/tree/master/0024-swap-nodes-in-pairs) |
+| [0086-partition-list](https://github.com/hritiksingh66/LeetCode/tree/master/0086-partition-list) |
 | [0206-reverse-linked-list](https://github.com/hritiksingh66/LeetCode/tree/master/0206-reverse-linked-list) |
 | [0328-odd-even-linked-list](https://github.com/hritiksingh66/LeetCode/tree/master/0328-odd-even-linked-list) |
 | [0835-linked-list-components](https://github.com/hritiksingh66/LeetCode/tree/master/0835-linked-list-components) |
