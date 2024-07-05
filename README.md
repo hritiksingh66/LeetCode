@@ -126,6 +126,7 @@
 ## Recursion
 |  |
 | ------- |
+| [0024-swap-nodes-in-pairs](https://github.com/hritiksingh66/LeetCode/tree/master/0024-swap-nodes-in-pairs) |
 | [0206-reverse-linked-list](https://github.com/hritiksingh66/LeetCode/tree/master/0206-reverse-linked-list) |
 | [0224-basic-calculator](https://github.com/hritiksingh66/LeetCode/tree/master/0224-basic-calculator) |
 | [0326-power-of-three](https://github.com/hritiksingh66/LeetCode/tree/master/0326-power-of-three) |
@@ -188,6 +189,7 @@
 ## Linked List
 |  |
 | ------- |
+| [0024-swap-nodes-in-pairs](https://github.com/hritiksingh66/LeetCode/tree/master/0024-swap-nodes-in-pairs) |
 | [0206-reverse-linked-list](https://github.com/hritiksingh66/LeetCode/tree/master/0206-reverse-linked-list) |
 | [0328-odd-even-linked-list](https://github.com/hritiksingh66/LeetCode/tree/master/0328-odd-even-linked-list) |
 | [0835-linked-list-components](https://github.com/hritiksingh66/LeetCode/tree/master/0835-linked-list-components) |
