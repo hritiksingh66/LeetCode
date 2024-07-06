@@ -123,6 +123,7 @@
 | ------- |
 | [0224-basic-calculator](https://github.com/hritiksingh66/LeetCode/tree/master/0224-basic-calculator) |
 | [0326-power-of-three](https://github.com/hritiksingh66/LeetCode/tree/master/0326-power-of-three) |
+| [2645-pass-the-pillow](https://github.com/hritiksingh66/LeetCode/tree/master/2645-pass-the-pillow) |
 ## Recursion
 |  |
 | ------- |
@@ -187,6 +188,7 @@
 | ------- |
 | [0735-asteroid-collision](https://github.com/hritiksingh66/LeetCode/tree/master/0735-asteroid-collision) |
 | [2299-merge-nodes-in-between-zeros](https://github.com/hritiksingh66/LeetCode/tree/master/2299-merge-nodes-in-between-zeros) |
+| [2645-pass-the-pillow](https://github.com/hritiksingh66/LeetCode/tree/master/2645-pass-the-pillow) |
 ## Linked List
 |  |
 | ------- |
