@@ -1,21 +1,13 @@
 class Solution {
+    int findWinnerIdx(int n , int k){
+        if(n==1) return 0;
+
+        int idx = findWinnerIdx(n-1,k);
+        idx = (idx+k)%n; // original idx in original array
+        return idx;
+    }
     public int findTheWinner(int n, int k){
-        ArrayList<Integer> arr_new = new ArrayList<Integer>();
-        int p = 0;
-
-        for(int i = 1 ; i <= n ; i++){
-            arr_new.add(i);
-        }
-
-        int i = 0;
-        while(arr_new.size() > 1){
-            int idx = (i+k-1)%arr_new.size();
-
-            arr_new.remove(idx) ;
-
-            i = idx;
-
-        }
-        return arr_new.get(0);
+        int result_idx = findWinnerIdx(n,k);
+        return result_idx + 1;
     }
 }
