@@ -124,6 +124,7 @@
 | [0224-basic-calculator](https://github.com/hritiksingh66/LeetCode/tree/master/0224-basic-calculator) |
 | [0326-power-of-three](https://github.com/hritiksingh66/LeetCode/tree/master/0326-power-of-three) |
 | [1642-water-bottles](https://github.com/hritiksingh66/LeetCode/tree/master/1642-water-bottles) |
+| [1951-find-the-winner-of-the-circular-game](https://github.com/hritiksingh66/LeetCode/tree/master/1951-find-the-winner-of-the-circular-game) |
 | [2645-pass-the-pillow](https://github.com/hritiksingh66/LeetCode/tree/master/2645-pass-the-pillow) |
 ## Recursion
 |  |
@@ -132,6 +133,7 @@
 | [0206-reverse-linked-list](https://github.com/hritiksingh66/LeetCode/tree/master/0206-reverse-linked-list) |
 | [0224-basic-calculator](https://github.com/hritiksingh66/LeetCode/tree/master/0224-basic-calculator) |
 | [0326-power-of-three](https://github.com/hritiksingh66/LeetCode/tree/master/0326-power-of-three) |
+| [1951-find-the-winner-of-the-circular-game](https://github.com/hritiksingh66/LeetCode/tree/master/1951-find-the-winner-of-the-circular-game) |
 ## Array
 |  |
 | ------- |
@@ -151,6 +153,7 @@
 | [1586-longest-subarray-of-1s-after-deleting-one-element](https://github.com/hritiksingh66/LeetCode/tree/master/1586-longest-subarray-of-1s-after-deleting-one-element) |
 | [1616-minimum-difference-between-largest-and-smallest-value-in-three-moves](https://github.com/hritiksingh66/LeetCode/tree/master/1616-minimum-difference-between-largest-and-smallest-value-in-three-moves) |
 | [1833-find-the-highest-altitude](https://github.com/hritiksingh66/LeetCode/tree/master/1833-find-the-highest-altitude) |
+| [1951-find-the-winner-of-the-circular-game](https://github.com/hritiksingh66/LeetCode/tree/master/1951-find-the-winner-of-the-circular-game) |
 | [2102-find-the-middle-index-in-array](https://github.com/hritiksingh66/LeetCode/tree/master/2102-find-the-middle-index-in-array) |
 | [2144-maximum-difference-between-increasing-elements](https://github.com/hritiksingh66/LeetCode/tree/master/2144-maximum-difference-between-increasing-elements) |
 | [2211-k-radius-subarray-averages](https://github.com/hritiksingh66/LeetCode/tree/master/2211-k-radius-subarray-averages) |
@@ -189,6 +192,7 @@
 | ------- |
 | [0735-asteroid-collision](https://github.com/hritiksingh66/LeetCode/tree/master/0735-asteroid-collision) |
 | [1642-water-bottles](https://github.com/hritiksingh66/LeetCode/tree/master/1642-water-bottles) |
+| [1951-find-the-winner-of-the-circular-game](https://github.com/hritiksingh66/LeetCode/tree/master/1951-find-the-winner-of-the-circular-game) |
 | [2299-merge-nodes-in-between-zeros](https://github.com/hritiksingh66/LeetCode/tree/master/2299-merge-nodes-in-between-zeros) |
 | [2645-pass-the-pillow](https://github.com/hritiksingh66/LeetCode/tree/master/2645-pass-the-pillow) |
 ## Linked List
@@ -247,4 +251,8 @@
 |  |
 | ------- |
 | [0287-find-the-duplicate-number](https://github.com/hritiksingh66/LeetCode/tree/master/0287-find-the-duplicate-number) |
+## Queue
+|  |
+| ------- |
+| [1951-find-the-winner-of-the-circular-game](https://github.com/hritiksingh66/LeetCode/tree/master/1951-find-the-winner-of-the-circular-game) |
 <!---LeetCode Topics End-->
