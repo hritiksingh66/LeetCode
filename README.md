@@ -82,6 +82,7 @@
 ## String
 |  |
 | ------- |
+| [0020-valid-parentheses](https://github.com/hritiksingh66/LeetCode/tree/master/0020-valid-parentheses) |
 | [0151-reverse-words-in-a-string](https://github.com/hritiksingh66/LeetCode/tree/master/0151-reverse-words-in-a-string) |
 | [0224-basic-calculator](https://github.com/hritiksingh66/LeetCode/tree/master/0224-basic-calculator) |
 | [0443-string-compression](https://github.com/hritiksingh66/LeetCode/tree/master/0443-string-compression) |
@@ -91,6 +92,7 @@
 ## Stack
 |  |
 | ------- |
+| [0020-valid-parentheses](https://github.com/hritiksingh66/LeetCode/tree/master/0020-valid-parentheses) |
 | [0150-evaluate-reverse-polish-notation](https://github.com/hritiksingh66/LeetCode/tree/master/0150-evaluate-reverse-polish-notation) |
 | [0224-basic-calculator](https://github.com/hritiksingh66/LeetCode/tree/master/0224-basic-calculator) |
 | [0232-implement-queue-using-stacks](https://github.com/hritiksingh66/LeetCode/tree/master/0232-implement-queue-using-stacks) |
