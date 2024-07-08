@@ -87,6 +87,7 @@
 | [0443-string-compression](https://github.com/hritiksingh66/LeetCode/tree/master/0443-string-compression) |
 | [1128-remove-all-adjacent-duplicates-in-string](https://github.com/hritiksingh66/LeetCode/tree/master/1128-remove-all-adjacent-duplicates-in-string) |
 | [1567-maximum-number-of-vowels-in-a-substring-of-given-length](https://github.com/hritiksingh66/LeetCode/tree/master/1567-maximum-number-of-vowels-in-a-substring-of-given-length) |
+| [2470-removing-stars-from-a-string](https://github.com/hritiksingh66/LeetCode/tree/master/2470-removing-stars-from-a-string) |
 ## Stack
 |  |
 | ------- |
@@ -96,6 +97,7 @@
 | [0735-asteroid-collision](https://github.com/hritiksingh66/LeetCode/tree/master/0735-asteroid-collision) |
 | [0943-sum-of-subarray-minimums](https://github.com/hritiksingh66/LeetCode/tree/master/0943-sum-of-subarray-minimums) |
 | [1128-remove-all-adjacent-duplicates-in-string](https://github.com/hritiksingh66/LeetCode/tree/master/1128-remove-all-adjacent-duplicates-in-string) |
+| [2470-removing-stars-from-a-string](https://github.com/hritiksingh66/LeetCode/tree/master/2470-removing-stars-from-a-string) |
 ## Greedy
 |  |
 | ------- |
@@ -198,6 +200,7 @@
 | [1642-water-bottles](https://github.com/hritiksingh66/LeetCode/tree/master/1642-water-bottles) |
 | [1951-find-the-winner-of-the-circular-game](https://github.com/hritiksingh66/LeetCode/tree/master/1951-find-the-winner-of-the-circular-game) |
 | [2299-merge-nodes-in-between-zeros](https://github.com/hritiksingh66/LeetCode/tree/master/2299-merge-nodes-in-between-zeros) |
+| [2470-removing-stars-from-a-string](https://github.com/hritiksingh66/LeetCode/tree/master/2470-removing-stars-from-a-string) |
 | [2645-pass-the-pillow](https://github.com/hritiksingh66/LeetCode/tree/master/2645-pass-the-pillow) |
 ## Linked List
 |  |
