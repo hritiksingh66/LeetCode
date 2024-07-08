@@ -1,17 +1,10 @@
 class Solution {
-    int opeRate(int a, int b, String token) {
-        switch (token) {
-            case "+":
-                return a + b;
-            case "-":
-                return a - b;
-            case "*":
-                return a * b;
-            case "/":
-                return a / b;
-            default:
-                throw new IllegalArgumentException("Invalid operator: " + token);
-        }
+   private static final Map<String, BiFunction<Integer, Integer, Integer>> operations = new HashMap<>();
+    static {
+        operations.put("+", (a, b) -> a + b);
+        operations.put("-", (a, b) -> a - b);
+        operations.put("*", (a, b) -> a * b);
+        operations.put("/", (a, b) -> a / b);
     }
 
    public int evalRPN(String[] tokens) {
@@ -21,7 +14,7 @@ class Solution {
             if (token.equals("+") || token.equals("-") || token.equals("*") || token.equals("/")) {
                 int b = st.pop();
                 int a = st.pop();
-                int result = opeRate(a, b, token);
+                int result = operations.get(token).apply(a, b);
                 st.push(result);
             } else {
                 st.push(Integer.valueOf(token));
