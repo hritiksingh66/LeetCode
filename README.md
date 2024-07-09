@@ -85,6 +85,7 @@
 | [0020-valid-parentheses](https://github.com/hritiksingh66/LeetCode/tree/master/0020-valid-parentheses) |
 | [0151-reverse-words-in-a-string](https://github.com/hritiksingh66/LeetCode/tree/master/0151-reverse-words-in-a-string) |
 | [0224-basic-calculator](https://github.com/hritiksingh66/LeetCode/tree/master/0224-basic-calculator) |
+| [0402-remove-k-digits](https://github.com/hritiksingh66/LeetCode/tree/master/0402-remove-k-digits) |
 | [0443-string-compression](https://github.com/hritiksingh66/LeetCode/tree/master/0443-string-compression) |
 | [1128-remove-all-adjacent-duplicates-in-string](https://github.com/hritiksingh66/LeetCode/tree/master/1128-remove-all-adjacent-duplicates-in-string) |
 | [1567-maximum-number-of-vowels-in-a-substring-of-given-length](https://github.com/hritiksingh66/LeetCode/tree/master/1567-maximum-number-of-vowels-in-a-substring-of-given-length) |
@@ -96,6 +97,7 @@
 | [0150-evaluate-reverse-polish-notation](https://github.com/hritiksingh66/LeetCode/tree/master/0150-evaluate-reverse-polish-notation) |
 | [0224-basic-calculator](https://github.com/hritiksingh66/LeetCode/tree/master/0224-basic-calculator) |
 | [0232-implement-queue-using-stacks](https://github.com/hritiksingh66/LeetCode/tree/master/0232-implement-queue-using-stacks) |
+| [0402-remove-k-digits](https://github.com/hritiksingh66/LeetCode/tree/master/0402-remove-k-digits) |
 | [0735-asteroid-collision](https://github.com/hritiksingh66/LeetCode/tree/master/0735-asteroid-collision) |
 | [0943-sum-of-subarray-minimums](https://github.com/hritiksingh66/LeetCode/tree/master/0943-sum-of-subarray-minimums) |
 | [0983-validate-stack-sequences](https://github.com/hritiksingh66/LeetCode/tree/master/0983-validate-stack-sequences) |
@@ -106,6 +108,7 @@
 |  |
 | ------- |
 | [0334-increasing-triplet-subsequence](https://github.com/hritiksingh66/LeetCode/tree/master/0334-increasing-triplet-subsequence) |
+| [0402-remove-k-digits](https://github.com/hritiksingh66/LeetCode/tree/master/0402-remove-k-digits) |
 | [1616-minimum-difference-between-largest-and-smallest-value-in-three-moves](https://github.com/hritiksingh66/LeetCode/tree/master/1616-minimum-difference-between-largest-and-smallest-value-in-three-moves) |
 | [2379-maximum-total-importance-of-roads](https://github.com/hritiksingh66/LeetCode/tree/master/2379-maximum-total-importance-of-roads) |
 ## Graph
@@ -243,6 +246,7 @@
 ## Monotonic Stack
 |  |
 | ------- |
+| [0402-remove-k-digits](https://github.com/hritiksingh66/LeetCode/tree/master/0402-remove-k-digits) |
 | [0943-sum-of-subarray-minimums](https://github.com/hritiksingh66/LeetCode/tree/master/0943-sum-of-subarray-minimums) |
 ## Binary Search
 |  |
