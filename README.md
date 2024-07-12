@@ -91,6 +91,7 @@
 | [1128-remove-all-adjacent-duplicates-in-string](https://github.com/hritiksingh66/LeetCode/tree/master/1128-remove-all-adjacent-duplicates-in-string) |
 | [1567-maximum-number-of-vowels-in-a-substring-of-given-length](https://github.com/hritiksingh66/LeetCode/tree/master/1567-maximum-number-of-vowels-in-a-substring-of-given-length) |
 | [1720-crawler-log-folder](https://github.com/hritiksingh66/LeetCode/tree/master/1720-crawler-log-folder) |
+| [1818-maximum-score-from-removing-substrings](https://github.com/hritiksingh66/LeetCode/tree/master/1818-maximum-score-from-removing-substrings) |
 | [2470-removing-stars-from-a-string](https://github.com/hritiksingh66/LeetCode/tree/master/2470-removing-stars-from-a-string) |
 ## Stack
 |  |
@@ -108,6 +109,7 @@
 | [1128-remove-all-adjacent-duplicates-in-string](https://github.com/hritiksingh66/LeetCode/tree/master/1128-remove-all-adjacent-duplicates-in-string) |
 | [1552-build-an-array-with-stack-operations](https://github.com/hritiksingh66/LeetCode/tree/master/1552-build-an-array-with-stack-operations) |
 | [1720-crawler-log-folder](https://github.com/hritiksingh66/LeetCode/tree/master/1720-crawler-log-folder) |
+| [1818-maximum-score-from-removing-substrings](https://github.com/hritiksingh66/LeetCode/tree/master/1818-maximum-score-from-removing-substrings) |
 | [2470-removing-stars-from-a-string](https://github.com/hritiksingh66/LeetCode/tree/master/2470-removing-stars-from-a-string) |
 ## Greedy
 |  |
@@ -115,6 +117,7 @@
 | [0334-increasing-triplet-subsequence](https://github.com/hritiksingh66/LeetCode/tree/master/0334-increasing-triplet-subsequence) |
 | [0402-remove-k-digits](https://github.com/hritiksingh66/LeetCode/tree/master/0402-remove-k-digits) |
 | [1616-minimum-difference-between-largest-and-smallest-value-in-three-moves](https://github.com/hritiksingh66/LeetCode/tree/master/1616-minimum-difference-between-largest-and-smallest-value-in-three-moves) |
+| [1818-maximum-score-from-removing-substrings](https://github.com/hritiksingh66/LeetCode/tree/master/1818-maximum-score-from-removing-substrings) |
 | [2379-maximum-total-importance-of-roads](https://github.com/hritiksingh66/LeetCode/tree/master/2379-maximum-total-importance-of-roads) |
 ## Graph
 |  |
