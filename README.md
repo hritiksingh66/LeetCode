@@ -89,6 +89,7 @@
 | [0402-remove-k-digits](https://github.com/hritiksingh66/LeetCode/tree/master/0402-remove-k-digits) |
 | [0443-string-compression](https://github.com/hritiksingh66/LeetCode/tree/master/0443-string-compression) |
 | [1128-remove-all-adjacent-duplicates-in-string](https://github.com/hritiksingh66/LeetCode/tree/master/1128-remove-all-adjacent-duplicates-in-string) |
+| [1321-get-equal-substrings-within-budget](https://github.com/hritiksingh66/LeetCode/tree/master/1321-get-equal-substrings-within-budget) |
 | [1567-maximum-number-of-vowels-in-a-substring-of-given-length](https://github.com/hritiksingh66/LeetCode/tree/master/1567-maximum-number-of-vowels-in-a-substring-of-given-length) |
 | [1720-crawler-log-folder](https://github.com/hritiksingh66/LeetCode/tree/master/1720-crawler-log-folder) |
 | [1818-maximum-score-from-removing-substrings](https://github.com/hritiksingh66/LeetCode/tree/master/1818-maximum-score-from-removing-substrings) |
@@ -190,6 +191,7 @@
 | [0238-product-of-array-except-self](https://github.com/hritiksingh66/LeetCode/tree/master/0238-product-of-array-except-self) |
 | [0724-find-pivot-index](https://github.com/hritiksingh66/LeetCode/tree/master/0724-find-pivot-index) |
 | [1046-max-consecutive-ones-iii](https://github.com/hritiksingh66/LeetCode/tree/master/1046-max-consecutive-ones-iii) |
+| [1321-get-equal-substrings-within-budget](https://github.com/hritiksingh66/LeetCode/tree/master/1321-get-equal-substrings-within-budget) |
 | [1833-find-the-highest-altitude](https://github.com/hritiksingh66/LeetCode/tree/master/1833-find-the-highest-altitude) |
 | [2102-find-the-middle-index-in-array](https://github.com/hritiksingh66/LeetCode/tree/master/2102-find-the-middle-index-in-array) |
 ## Depth-First Search
@@ -267,11 +269,13 @@
 | [0350-intersection-of-two-arrays-ii](https://github.com/hritiksingh66/LeetCode/tree/master/0350-intersection-of-two-arrays-ii) |
 | [0456-132-pattern](https://github.com/hritiksingh66/LeetCode/tree/master/0456-132-pattern) |
 | [1046-max-consecutive-ones-iii](https://github.com/hritiksingh66/LeetCode/tree/master/1046-max-consecutive-ones-iii) |
+| [1321-get-equal-substrings-within-budget](https://github.com/hritiksingh66/LeetCode/tree/master/1321-get-equal-substrings-within-budget) |
 ## Sliding Window
 |  |
 | ------- |
 | [0209-minimum-size-subarray-sum](https://github.com/hritiksingh66/LeetCode/tree/master/0209-minimum-size-subarray-sum) |
 | [1046-max-consecutive-ones-iii](https://github.com/hritiksingh66/LeetCode/tree/master/1046-max-consecutive-ones-iii) |
+| [1321-get-equal-substrings-within-budget](https://github.com/hritiksingh66/LeetCode/tree/master/1321-get-equal-substrings-within-budget) |
 | [1567-maximum-number-of-vowels-in-a-substring-of-given-length](https://github.com/hritiksingh66/LeetCode/tree/master/1567-maximum-number-of-vowels-in-a-substring-of-given-length) |
 | [1586-longest-subarray-of-1s-after-deleting-one-element](https://github.com/hritiksingh66/LeetCode/tree/master/1586-longest-subarray-of-1s-after-deleting-one-element) |
 | [2211-k-radius-subarray-averages](https://github.com/hritiksingh66/LeetCode/tree/master/2211-k-radius-subarray-averages) |
