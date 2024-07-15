@@ -3,11 +3,7 @@ class Solution {
 
         int n = nums.length;
 
-        int i = 0;
-        int j = 0;
-        int last_zero_idx = -1;
-
-        int result = 0;
+        int i = 0 , j = 0 , last_zero_idx = -1 , result = 0;
 
         while(j < n ){
             if(nums[j]==0){ 
@@ -17,8 +13,6 @@ class Solution {
             result = Math.max(result , j-i);
             j++;
         }
-
         return result;
-        
     }
 }
