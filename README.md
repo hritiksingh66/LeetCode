@@ -84,6 +84,7 @@
 | ------- |
 | [0020-valid-parentheses](https://github.com/hritiksingh66/LeetCode/tree/master/0020-valid-parentheses) |
 | [0071-simplify-path](https://github.com/hritiksingh66/LeetCode/tree/master/0071-simplify-path) |
+| [0072-edit-distance](https://github.com/hritiksingh66/LeetCode/tree/master/0072-edit-distance) |
 | [0151-reverse-words-in-a-string](https://github.com/hritiksingh66/LeetCode/tree/master/0151-reverse-words-in-a-string) |
 | [0224-basic-calculator](https://github.com/hritiksingh66/LeetCode/tree/master/0224-basic-calculator) |
 | [0402-remove-k-digits](https://github.com/hritiksingh66/LeetCode/tree/master/0402-remove-k-digits) |
@@ -268,6 +269,7 @@
 |  |
 | ------- |
 | [0062-unique-paths](https://github.com/hritiksingh66/LeetCode/tree/master/0062-unique-paths) |
+| [0072-edit-distance](https://github.com/hritiksingh66/LeetCode/tree/master/0072-edit-distance) |
 | [0714-best-time-to-buy-and-sell-stock-with-transaction-fee](https://github.com/hritiksingh66/LeetCode/tree/master/0714-best-time-to-buy-and-sell-stock-with-transaction-fee) |
 | [0943-sum-of-subarray-minimums](https://github.com/hritiksingh66/LeetCode/tree/master/0943-sum-of-subarray-minimums) |
 | [1250-longest-common-subsequence](https://github.com/hritiksingh66/LeetCode/tree/master/1250-longest-common-subsequence) |
