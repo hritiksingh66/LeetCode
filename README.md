@@ -90,6 +90,7 @@
 | [0443-string-compression](https://github.com/hritiksingh66/LeetCode/tree/master/0443-string-compression) |
 | [0726-number-of-atoms](https://github.com/hritiksingh66/LeetCode/tree/master/0726-number-of-atoms) |
 | [1128-remove-all-adjacent-duplicates-in-string](https://github.com/hritiksingh66/LeetCode/tree/master/1128-remove-all-adjacent-duplicates-in-string) |
+| [1250-longest-common-subsequence](https://github.com/hritiksingh66/LeetCode/tree/master/1250-longest-common-subsequence) |
 | [1321-get-equal-substrings-within-budget](https://github.com/hritiksingh66/LeetCode/tree/master/1321-get-equal-substrings-within-budget) |
 | [1567-maximum-number-of-vowels-in-a-substring-of-given-length](https://github.com/hritiksingh66/LeetCode/tree/master/1567-maximum-number-of-vowels-in-a-substring-of-given-length) |
 | [1720-crawler-log-folder](https://github.com/hritiksingh66/LeetCode/tree/master/1720-crawler-log-folder) |
@@ -266,6 +267,7 @@
 | ------- |
 | [0062-unique-paths](https://github.com/hritiksingh66/LeetCode/tree/master/0062-unique-paths) |
 | [0943-sum-of-subarray-minimums](https://github.com/hritiksingh66/LeetCode/tree/master/0943-sum-of-subarray-minimums) |
+| [1250-longest-common-subsequence](https://github.com/hritiksingh66/LeetCode/tree/master/1250-longest-common-subsequence) |
 | [1586-longest-subarray-of-1s-after-deleting-one-element](https://github.com/hritiksingh66/LeetCode/tree/master/1586-longest-subarray-of-1s-after-deleting-one-element) |
 ## Monotonic Stack
 |  |
