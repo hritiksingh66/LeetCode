@@ -189,6 +189,7 @@
 | [2102-find-the-middle-index-in-array](https://github.com/hritiksingh66/LeetCode/tree/master/2102-find-the-middle-index-in-array) |
 | [2144-maximum-difference-between-increasing-elements](https://github.com/hritiksingh66/LeetCode/tree/master/2144-maximum-difference-between-increasing-elements) |
 | [2211-k-radius-subarray-averages](https://github.com/hritiksingh66/LeetCode/tree/master/2211-k-radius-subarray-averages) |
+| [2306-create-binary-tree-from-descriptions](https://github.com/hritiksingh66/LeetCode/tree/master/2306-create-binary-tree-from-descriptions) |
 | [2846-robot-collisions](https://github.com/hritiksingh66/LeetCode/tree/master/2846-robot-collisions) |
 | [3225-length-of-longest-subarray-with-at-most-k-frequency](https://github.com/hritiksingh66/LeetCode/tree/master/3225-length-of-longest-subarray-with-at-most-k-frequency) |
 ## Prefix Sum
@@ -294,6 +295,7 @@
 | [0350-intersection-of-two-arrays-ii](https://github.com/hritiksingh66/LeetCode/tree/master/0350-intersection-of-two-arrays-ii) |
 | [0726-number-of-atoms](https://github.com/hritiksingh66/LeetCode/tree/master/0726-number-of-atoms) |
 | [0835-linked-list-components](https://github.com/hritiksingh66/LeetCode/tree/master/0835-linked-list-components) |
+| [2306-create-binary-tree-from-descriptions](https://github.com/hritiksingh66/LeetCode/tree/master/2306-create-binary-tree-from-descriptions) |
 | [3225-length-of-longest-subarray-with-at-most-k-frequency](https://github.com/hritiksingh66/LeetCode/tree/master/3225-length-of-longest-subarray-with-at-most-k-frequency) |
 ## Bit Manipulation
 |  |
@@ -312,4 +314,12 @@
 |  |
 | ------- |
 | [0456-132-pattern](https://github.com/hritiksingh66/LeetCode/tree/master/0456-132-pattern) |
+## Tree
+|  |
+| ------- |
+| [2306-create-binary-tree-from-descriptions](https://github.com/hritiksingh66/LeetCode/tree/master/2306-create-binary-tree-from-descriptions) |
+## Binary Tree
+|  |
+| ------- |
+| [2306-create-binary-tree-from-descriptions](https://github.com/hritiksingh66/LeetCode/tree/master/2306-create-binary-tree-from-descriptions) |
 <!---LeetCode Topics End-->
