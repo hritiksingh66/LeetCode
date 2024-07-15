@@ -153,6 +153,7 @@
 | [0150-evaluate-reverse-polish-notation](https://github.com/hritiksingh66/LeetCode/tree/master/0150-evaluate-reverse-polish-notation) |
 | [0224-basic-calculator](https://github.com/hritiksingh66/LeetCode/tree/master/0224-basic-calculator) |
 | [0326-power-of-three](https://github.com/hritiksingh66/LeetCode/tree/master/0326-power-of-three) |
+| [1236-n-th-tribonacci-number](https://github.com/hritiksingh66/LeetCode/tree/master/1236-n-th-tribonacci-number) |
 | [1642-water-bottles](https://github.com/hritiksingh66/LeetCode/tree/master/1642-water-bottles) |
 | [1951-find-the-winner-of-the-circular-game](https://github.com/hritiksingh66/LeetCode/tree/master/1951-find-the-winner-of-the-circular-game) |
 | [2491-smallest-even-multiple](https://github.com/hritiksingh66/LeetCode/tree/master/2491-smallest-even-multiple) |
@@ -273,6 +274,7 @@
 | [0072-edit-distance](https://github.com/hritiksingh66/LeetCode/tree/master/0072-edit-distance) |
 | [0714-best-time-to-buy-and-sell-stock-with-transaction-fee](https://github.com/hritiksingh66/LeetCode/tree/master/0714-best-time-to-buy-and-sell-stock-with-transaction-fee) |
 | [0943-sum-of-subarray-minimums](https://github.com/hritiksingh66/LeetCode/tree/master/0943-sum-of-subarray-minimums) |
+| [1236-n-th-tribonacci-number](https://github.com/hritiksingh66/LeetCode/tree/master/1236-n-th-tribonacci-number) |
 | [1250-longest-common-subsequence](https://github.com/hritiksingh66/LeetCode/tree/master/1250-longest-common-subsequence) |
 | [1586-longest-subarray-of-1s-after-deleting-one-element](https://github.com/hritiksingh66/LeetCode/tree/master/1586-longest-subarray-of-1s-after-deleting-one-element) |
 ## Monotonic Stack
@@ -342,4 +344,8 @@
 |  |
 | ------- |
 | [2491-smallest-even-multiple](https://github.com/hritiksingh66/LeetCode/tree/master/2491-smallest-even-multiple) |
+## Memoization
+|  |
+| ------- |
+| [1236-n-th-tribonacci-number](https://github.com/hritiksingh66/LeetCode/tree/master/1236-n-th-tribonacci-number) |
 <!---LeetCode Topics End-->
