@@ -171,6 +171,7 @@
 | ------- |
 | [0136-single-number](https://github.com/hritiksingh66/LeetCode/tree/master/0136-single-number) |
 | [0150-evaluate-reverse-polish-notation](https://github.com/hritiksingh66/LeetCode/tree/master/0150-evaluate-reverse-polish-notation) |
+| [0162-find-peak-element](https://github.com/hritiksingh66/LeetCode/tree/master/0162-find-peak-element) |
 | [0209-minimum-size-subarray-sum](https://github.com/hritiksingh66/LeetCode/tree/master/0209-minimum-size-subarray-sum) |
 | [0215-kth-largest-element-in-an-array](https://github.com/hritiksingh66/LeetCode/tree/master/0215-kth-largest-element-in-an-array) |
 | [0238-product-of-array-except-self](https://github.com/hritiksingh66/LeetCode/tree/master/0238-product-of-array-except-self) |
@@ -286,6 +287,7 @@
 ## Binary Search
 |  |
 | ------- |
+| [0162-find-peak-element](https://github.com/hritiksingh66/LeetCode/tree/master/0162-find-peak-element) |
 | [0209-minimum-size-subarray-sum](https://github.com/hritiksingh66/LeetCode/tree/master/0209-minimum-size-subarray-sum) |
 | [0287-find-the-duplicate-number](https://github.com/hritiksingh66/LeetCode/tree/master/0287-find-the-duplicate-number) |
 | [0350-intersection-of-two-arrays-ii](https://github.com/hritiksingh66/LeetCode/tree/master/0350-intersection-of-two-arrays-ii) |
