@@ -87,6 +87,7 @@
 | [0072-edit-distance](https://github.com/hritiksingh66/LeetCode/tree/master/0072-edit-distance) |
 | [0151-reverse-words-in-a-string](https://github.com/hritiksingh66/LeetCode/tree/master/0151-reverse-words-in-a-string) |
 | [0224-basic-calculator](https://github.com/hritiksingh66/LeetCode/tree/master/0224-basic-calculator) |
+| [0399-evaluate-division](https://github.com/hritiksingh66/LeetCode/tree/master/0399-evaluate-division) |
 | [0402-remove-k-digits](https://github.com/hritiksingh66/LeetCode/tree/master/0402-remove-k-digits) |
 | [0443-string-compression](https://github.com/hritiksingh66/LeetCode/tree/master/0443-string-compression) |
 | [0726-number-of-atoms](https://github.com/hritiksingh66/LeetCode/tree/master/0726-number-of-atoms) |
@@ -130,6 +131,7 @@
 ## Graph
 |  |
 | ------- |
+| [0399-evaluate-division](https://github.com/hritiksingh66/LeetCode/tree/master/0399-evaluate-division) |
 | [0547-number-of-provinces](https://github.com/hritiksingh66/LeetCode/tree/master/0547-number-of-provinces) |
 | [0871-keys-and-rooms](https://github.com/hritiksingh66/LeetCode/tree/master/0871-keys-and-rooms) |
 | [1431-all-ancestors-of-a-node-in-a-directed-acyclic-graph](https://github.com/hritiksingh66/LeetCode/tree/master/1431-all-ancestors-of-a-node-in-a-directed-acyclic-graph) |
@@ -182,6 +184,7 @@
 | [0287-find-the-duplicate-number](https://github.com/hritiksingh66/LeetCode/tree/master/0287-find-the-duplicate-number) |
 | [0334-increasing-triplet-subsequence](https://github.com/hritiksingh66/LeetCode/tree/master/0334-increasing-triplet-subsequence) |
 | [0350-intersection-of-two-arrays-ii](https://github.com/hritiksingh66/LeetCode/tree/master/0350-intersection-of-two-arrays-ii) |
+| [0399-evaluate-division](https://github.com/hritiksingh66/LeetCode/tree/master/0399-evaluate-division) |
 | [0456-132-pattern](https://github.com/hritiksingh66/LeetCode/tree/master/0456-132-pattern) |
 | [0485-max-consecutive-ones](https://github.com/hritiksingh66/LeetCode/tree/master/0485-max-consecutive-ones) |
 | [0714-best-time-to-buy-and-sell-stock-with-transaction-fee](https://github.com/hritiksingh66/LeetCode/tree/master/0714-best-time-to-buy-and-sell-stock-with-transaction-fee) |
@@ -221,6 +224,7 @@
 | [0104-maximum-depth-of-binary-tree](https://github.com/hritiksingh66/LeetCode/tree/master/0104-maximum-depth-of-binary-tree) |
 | [0199-binary-tree-right-side-view](https://github.com/hritiksingh66/LeetCode/tree/master/0199-binary-tree-right-side-view) |
 | [0236-lowest-common-ancestor-of-a-binary-tree](https://github.com/hritiksingh66/LeetCode/tree/master/0236-lowest-common-ancestor-of-a-binary-tree) |
+| [0399-evaluate-division](https://github.com/hritiksingh66/LeetCode/tree/master/0399-evaluate-division) |
 | [0437-path-sum-iii](https://github.com/hritiksingh66/LeetCode/tree/master/0437-path-sum-iii) |
 | [0547-number-of-provinces](https://github.com/hritiksingh66/LeetCode/tree/master/0547-number-of-provinces) |
 | [0871-keys-and-rooms](https://github.com/hritiksingh66/LeetCode/tree/master/0871-keys-and-rooms) |
@@ -236,6 +240,7 @@
 | ------- |
 | [0104-maximum-depth-of-binary-tree](https://github.com/hritiksingh66/LeetCode/tree/master/0104-maximum-depth-of-binary-tree) |
 | [0199-binary-tree-right-side-view](https://github.com/hritiksingh66/LeetCode/tree/master/0199-binary-tree-right-side-view) |
+| [0399-evaluate-division](https://github.com/hritiksingh66/LeetCode/tree/master/0399-evaluate-division) |
 | [0547-number-of-provinces](https://github.com/hritiksingh66/LeetCode/tree/master/0547-number-of-provinces) |
 | [0871-keys-and-rooms](https://github.com/hritiksingh66/LeetCode/tree/master/0871-keys-and-rooms) |
 | [1116-maximum-level-sum-of-a-binary-tree](https://github.com/hritiksingh66/LeetCode/tree/master/1116-maximum-level-sum-of-a-binary-tree) |
@@ -282,6 +287,7 @@
 ## Union Find
 |  |
 | ------- |
+| [0399-evaluate-division](https://github.com/hritiksingh66/LeetCode/tree/master/0399-evaluate-division) |
 | [0547-number-of-provinces](https://github.com/hritiksingh66/LeetCode/tree/master/0547-number-of-provinces) |
 | [1701-remove-max-number-of-edges-to-keep-graph-fully-traversable](https://github.com/hritiksingh66/LeetCode/tree/master/1701-remove-max-number-of-edges-to-keep-graph-fully-traversable) |
 ## Divide and Conquer
@@ -402,4 +408,8 @@
 | ------- |
 | [0450-delete-node-in-a-bst](https://github.com/hritiksingh66/LeetCode/tree/master/0450-delete-node-in-a-bst) |
 | [0783-search-in-a-binary-search-tree](https://github.com/hritiksingh66/LeetCode/tree/master/0783-search-in-a-binary-search-tree) |
+## Shortest Path
+|  |
+| ------- |
+| [0399-evaluate-division](https://github.com/hritiksingh66/LeetCode/tree/master/0399-evaluate-division) |
 <!---LeetCode Topics End-->
