@@ -202,6 +202,7 @@
 | [1803-average-waiting-time](https://github.com/hritiksingh66/LeetCode/tree/master/1803-average-waiting-time) |
 | [1833-find-the-highest-altitude](https://github.com/hritiksingh66/LeetCode/tree/master/1833-find-the-highest-altitude) |
 | [1951-find-the-winner-of-the-circular-game](https://github.com/hritiksingh66/LeetCode/tree/master/1951-find-the-winner-of-the-circular-game) |
+| [2038-nearest-exit-from-entrance-in-maze](https://github.com/hritiksingh66/LeetCode/tree/master/2038-nearest-exit-from-entrance-in-maze) |
 | [2102-find-the-middle-index-in-array](https://github.com/hritiksingh66/LeetCode/tree/master/2102-find-the-middle-index-in-array) |
 | [2144-maximum-difference-between-increasing-elements](https://github.com/hritiksingh66/LeetCode/tree/master/2144-maximum-difference-between-increasing-elements) |
 | [2211-k-radius-subarray-averages](https://github.com/hritiksingh66/LeetCode/tree/master/2211-k-radius-subarray-averages) |
@@ -247,6 +248,7 @@
 | [1431-all-ancestors-of-a-node-in-a-directed-acyclic-graph](https://github.com/hritiksingh66/LeetCode/tree/master/1431-all-ancestors-of-a-node-in-a-directed-acyclic-graph) |
 | [1544-count-good-nodes-in-binary-tree](https://github.com/hritiksingh66/LeetCode/tree/master/1544-count-good-nodes-in-binary-tree) |
 | [1576-reorder-routes-to-make-all-paths-lead-to-the-city-zero](https://github.com/hritiksingh66/LeetCode/tree/master/1576-reorder-routes-to-make-all-paths-lead-to-the-city-zero) |
+| [2038-nearest-exit-from-entrance-in-maze](https://github.com/hritiksingh66/LeetCode/tree/master/2038-nearest-exit-from-entrance-in-maze) |
 ## Topological Sort
 |  |
 | ------- |
@@ -412,4 +414,8 @@
 |  |
 | ------- |
 | [0399-evaluate-division](https://github.com/hritiksingh66/LeetCode/tree/master/0399-evaluate-division) |
+## Matrix
+|  |
+| ------- |
+| [2038-nearest-exit-from-entrance-in-maze](https://github.com/hritiksingh66/LeetCode/tree/master/2038-nearest-exit-from-entrance-in-maze) |
 <!---LeetCode Topics End-->
