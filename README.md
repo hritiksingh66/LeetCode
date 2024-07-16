@@ -178,6 +178,7 @@
 | [0136-single-number](https://github.com/hritiksingh66/LeetCode/tree/master/0136-single-number) |
 | [0150-evaluate-reverse-polish-notation](https://github.com/hritiksingh66/LeetCode/tree/master/0150-evaluate-reverse-polish-notation) |
 | [0162-find-peak-element](https://github.com/hritiksingh66/LeetCode/tree/master/0162-find-peak-element) |
+| [0198-house-robber](https://github.com/hritiksingh66/LeetCode/tree/master/0198-house-robber) |
 | [0209-minimum-size-subarray-sum](https://github.com/hritiksingh66/LeetCode/tree/master/0209-minimum-size-subarray-sum) |
 | [0215-kth-largest-element-in-an-array](https://github.com/hritiksingh66/LeetCode/tree/master/0215-kth-largest-element-in-an-array) |
 | [0238-product-of-array-except-self](https://github.com/hritiksingh66/LeetCode/tree/master/0238-product-of-array-except-self) |
@@ -306,6 +307,7 @@
 | ------- |
 | [0062-unique-paths](https://github.com/hritiksingh66/LeetCode/tree/master/0062-unique-paths) |
 | [0072-edit-distance](https://github.com/hritiksingh66/LeetCode/tree/master/0072-edit-distance) |
+| [0198-house-robber](https://github.com/hritiksingh66/LeetCode/tree/master/0198-house-robber) |
 | [0714-best-time-to-buy-and-sell-stock-with-transaction-fee](https://github.com/hritiksingh66/LeetCode/tree/master/0714-best-time-to-buy-and-sell-stock-with-transaction-fee) |
 | [0747-min-cost-climbing-stairs](https://github.com/hritiksingh66/LeetCode/tree/master/0747-min-cost-climbing-stairs) |
 | [0943-sum-of-subarray-minimums](https://github.com/hritiksingh66/LeetCode/tree/master/0943-sum-of-subarray-minimums) |
