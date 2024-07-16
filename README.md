@@ -190,6 +190,7 @@
 | [0714-best-time-to-buy-and-sell-stock-with-transaction-fee](https://github.com/hritiksingh66/LeetCode/tree/master/0714-best-time-to-buy-and-sell-stock-with-transaction-fee) |
 | [0724-find-pivot-index](https://github.com/hritiksingh66/LeetCode/tree/master/0724-find-pivot-index) |
 | [0735-asteroid-collision](https://github.com/hritiksingh66/LeetCode/tree/master/0735-asteroid-collision) |
+| [0747-min-cost-climbing-stairs](https://github.com/hritiksingh66/LeetCode/tree/master/0747-min-cost-climbing-stairs) |
 | [0835-linked-list-components](https://github.com/hritiksingh66/LeetCode/tree/master/0835-linked-list-components) |
 | [0943-sum-of-subarray-minimums](https://github.com/hritiksingh66/LeetCode/tree/master/0943-sum-of-subarray-minimums) |
 | [0983-validate-stack-sequences](https://github.com/hritiksingh66/LeetCode/tree/master/0983-validate-stack-sequences) |
@@ -306,6 +307,7 @@
 | [0062-unique-paths](https://github.com/hritiksingh66/LeetCode/tree/master/0062-unique-paths) |
 | [0072-edit-distance](https://github.com/hritiksingh66/LeetCode/tree/master/0072-edit-distance) |
 | [0714-best-time-to-buy-and-sell-stock-with-transaction-fee](https://github.com/hritiksingh66/LeetCode/tree/master/0714-best-time-to-buy-and-sell-stock-with-transaction-fee) |
+| [0747-min-cost-climbing-stairs](https://github.com/hritiksingh66/LeetCode/tree/master/0747-min-cost-climbing-stairs) |
 | [0943-sum-of-subarray-minimums](https://github.com/hritiksingh66/LeetCode/tree/master/0943-sum-of-subarray-minimums) |
 | [1236-n-th-tribonacci-number](https://github.com/hritiksingh66/LeetCode/tree/master/1236-n-th-tribonacci-number) |
 | [1250-longest-common-subsequence](https://github.com/hritiksingh66/LeetCode/tree/master/1250-longest-common-subsequence) |
