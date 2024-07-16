@@ -216,6 +216,7 @@
 |  |
 | ------- |
 | [0104-maximum-depth-of-binary-tree](https://github.com/hritiksingh66/LeetCode/tree/master/0104-maximum-depth-of-binary-tree) |
+| [0904-leaf-similar-trees](https://github.com/hritiksingh66/LeetCode/tree/master/0904-leaf-similar-trees) |
 | [1431-all-ancestors-of-a-node-in-a-directed-acyclic-graph](https://github.com/hritiksingh66/LeetCode/tree/master/1431-all-ancestors-of-a-node-in-a-directed-acyclic-graph) |
 | [2217-step-by-step-directions-from-a-binary-tree-node-to-another](https://github.com/hritiksingh66/LeetCode/tree/master/2217-step-by-step-directions-from-a-binary-tree-node-to-another) |
 ## Breadth-First Search
@@ -338,12 +339,14 @@
 |  |
 | ------- |
 | [0104-maximum-depth-of-binary-tree](https://github.com/hritiksingh66/LeetCode/tree/master/0104-maximum-depth-of-binary-tree) |
+| [0904-leaf-similar-trees](https://github.com/hritiksingh66/LeetCode/tree/master/0904-leaf-similar-trees) |
 | [2217-step-by-step-directions-from-a-binary-tree-node-to-another](https://github.com/hritiksingh66/LeetCode/tree/master/2217-step-by-step-directions-from-a-binary-tree-node-to-another) |
 | [2306-create-binary-tree-from-descriptions](https://github.com/hritiksingh66/LeetCode/tree/master/2306-create-binary-tree-from-descriptions) |
 ## Binary Tree
 |  |
 | ------- |
 | [0104-maximum-depth-of-binary-tree](https://github.com/hritiksingh66/LeetCode/tree/master/0104-maximum-depth-of-binary-tree) |
+| [0904-leaf-similar-trees](https://github.com/hritiksingh66/LeetCode/tree/master/0904-leaf-similar-trees) |
 | [2217-step-by-step-directions-from-a-binary-tree-node-to-another](https://github.com/hritiksingh66/LeetCode/tree/master/2217-step-by-step-directions-from-a-binary-tree-node-to-another) |
 | [2306-create-binary-tree-from-descriptions](https://github.com/hritiksingh66/LeetCode/tree/master/2306-create-binary-tree-from-descriptions) |
 ## Combinatorics
