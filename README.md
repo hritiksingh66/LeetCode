@@ -146,6 +146,7 @@
 | [0726-number-of-atoms](https://github.com/hritiksingh66/LeetCode/tree/master/0726-number-of-atoms) |
 | [1616-minimum-difference-between-largest-and-smallest-value-in-three-moves](https://github.com/hritiksingh66/LeetCode/tree/master/1616-minimum-difference-between-largest-and-smallest-value-in-three-moves) |
 | [2379-maximum-total-importance-of-roads](https://github.com/hritiksingh66/LeetCode/tree/master/2379-maximum-total-importance-of-roads) |
+| [2392-successful-pairs-of-spells-and-potions](https://github.com/hritiksingh66/LeetCode/tree/master/2392-successful-pairs-of-spells-and-potions) |
 | [2846-robot-collisions](https://github.com/hritiksingh66/LeetCode/tree/master/2846-robot-collisions) |
 ## Heap (Priority Queue)
 |  |
@@ -210,6 +211,7 @@
 | [2144-maximum-difference-between-increasing-elements](https://github.com/hritiksingh66/LeetCode/tree/master/2144-maximum-difference-between-increasing-elements) |
 | [2211-k-radius-subarray-averages](https://github.com/hritiksingh66/LeetCode/tree/master/2211-k-radius-subarray-averages) |
 | [2306-create-binary-tree-from-descriptions](https://github.com/hritiksingh66/LeetCode/tree/master/2306-create-binary-tree-from-descriptions) |
+| [2392-successful-pairs-of-spells-and-potions](https://github.com/hritiksingh66/LeetCode/tree/master/2392-successful-pairs-of-spells-and-potions) |
 | [2846-robot-collisions](https://github.com/hritiksingh66/LeetCode/tree/master/2846-robot-collisions) |
 | [3225-length-of-longest-subarray-with-at-most-k-frequency](https://github.com/hritiksingh66/LeetCode/tree/master/3225-length-of-longest-subarray-with-at-most-k-frequency) |
 ## Prefix Sum
@@ -266,6 +268,7 @@
 | [0350-intersection-of-two-arrays-ii](https://github.com/hritiksingh66/LeetCode/tree/master/0350-intersection-of-two-arrays-ii) |
 | [0443-string-compression](https://github.com/hritiksingh66/LeetCode/tree/master/0443-string-compression) |
 | [2216-delete-the-middle-node-of-a-linked-list](https://github.com/hritiksingh66/LeetCode/tree/master/2216-delete-the-middle-node-of-a-linked-list) |
+| [2392-successful-pairs-of-spells-and-potions](https://github.com/hritiksingh66/LeetCode/tree/master/2392-successful-pairs-of-spells-and-potions) |
 ## Simulation
 |  |
 | ------- |
@@ -335,6 +338,7 @@
 | [0456-132-pattern](https://github.com/hritiksingh66/LeetCode/tree/master/0456-132-pattern) |
 | [1046-max-consecutive-ones-iii](https://github.com/hritiksingh66/LeetCode/tree/master/1046-max-consecutive-ones-iii) |
 | [1321-get-equal-substrings-within-budget](https://github.com/hritiksingh66/LeetCode/tree/master/1321-get-equal-substrings-within-budget) |
+| [2392-successful-pairs-of-spells-and-potions](https://github.com/hritiksingh66/LeetCode/tree/master/2392-successful-pairs-of-spells-and-potions) |
 ## Sliding Window
 |  |
 | ------- |
