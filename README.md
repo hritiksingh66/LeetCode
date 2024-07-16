@@ -195,6 +195,7 @@
 | [0835-linked-list-components](https://github.com/hritiksingh66/LeetCode/tree/master/0835-linked-list-components) |
 | [0943-sum-of-subarray-minimums](https://github.com/hritiksingh66/LeetCode/tree/master/0943-sum-of-subarray-minimums) |
 | [0983-validate-stack-sequences](https://github.com/hritiksingh66/LeetCode/tree/master/0983-validate-stack-sequences) |
+| [1036-rotting-oranges](https://github.com/hritiksingh66/LeetCode/tree/master/1036-rotting-oranges) |
 | [1046-max-consecutive-ones-iii](https://github.com/hritiksingh66/LeetCode/tree/master/1046-max-consecutive-ones-iii) |
 | [1293-three-consecutive-odds](https://github.com/hritiksingh66/LeetCode/tree/master/1293-three-consecutive-odds) |
 | [1552-build-an-array-with-stack-operations](https://github.com/hritiksingh66/LeetCode/tree/master/1552-build-an-array-with-stack-operations) |
@@ -246,6 +247,7 @@
 | [0399-evaluate-division](https://github.com/hritiksingh66/LeetCode/tree/master/0399-evaluate-division) |
 | [0547-number-of-provinces](https://github.com/hritiksingh66/LeetCode/tree/master/0547-number-of-provinces) |
 | [0871-keys-and-rooms](https://github.com/hritiksingh66/LeetCode/tree/master/0871-keys-and-rooms) |
+| [1036-rotting-oranges](https://github.com/hritiksingh66/LeetCode/tree/master/1036-rotting-oranges) |
 | [1116-maximum-level-sum-of-a-binary-tree](https://github.com/hritiksingh66/LeetCode/tree/master/1116-maximum-level-sum-of-a-binary-tree) |
 | [1431-all-ancestors-of-a-node-in-a-directed-acyclic-graph](https://github.com/hritiksingh66/LeetCode/tree/master/1431-all-ancestors-of-a-node-in-a-directed-acyclic-graph) |
 | [1544-count-good-nodes-in-binary-tree](https://github.com/hritiksingh66/LeetCode/tree/master/1544-count-good-nodes-in-binary-tree) |
@@ -422,6 +424,7 @@
 ## Matrix
 |  |
 | ------- |
+| [1036-rotting-oranges](https://github.com/hritiksingh66/LeetCode/tree/master/1036-rotting-oranges) |
 | [2038-nearest-exit-from-entrance-in-maze](https://github.com/hritiksingh66/LeetCode/tree/master/2038-nearest-exit-from-entrance-in-maze) |
 ## Interactive
 |  |
