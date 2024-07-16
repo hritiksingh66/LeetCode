@@ -328,6 +328,7 @@
 | [0209-minimum-size-subarray-sum](https://github.com/hritiksingh66/LeetCode/tree/master/0209-minimum-size-subarray-sum) |
 | [0287-find-the-duplicate-number](https://github.com/hritiksingh66/LeetCode/tree/master/0287-find-the-duplicate-number) |
 | [0350-intersection-of-two-arrays-ii](https://github.com/hritiksingh66/LeetCode/tree/master/0350-intersection-of-two-arrays-ii) |
+| [0374-guess-number-higher-or-lower](https://github.com/hritiksingh66/LeetCode/tree/master/0374-guess-number-higher-or-lower) |
 | [0456-132-pattern](https://github.com/hritiksingh66/LeetCode/tree/master/0456-132-pattern) |
 | [1046-max-consecutive-ones-iii](https://github.com/hritiksingh66/LeetCode/tree/master/1046-max-consecutive-ones-iii) |
 | [1321-get-equal-substrings-within-budget](https://github.com/hritiksingh66/LeetCode/tree/master/1321-get-equal-substrings-within-budget) |
@@ -422,4 +423,8 @@
 |  |
 | ------- |
 | [2038-nearest-exit-from-entrance-in-maze](https://github.com/hritiksingh66/LeetCode/tree/master/2038-nearest-exit-from-entrance-in-maze) |
+## Interactive
+|  |
+| ------- |
+| [0374-guess-number-higher-or-lower](https://github.com/hritiksingh66/LeetCode/tree/master/0374-guess-number-higher-or-lower) |
 <!---LeetCode Topics End-->
