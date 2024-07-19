@@ -200,6 +200,7 @@
 | [1036-rotting-oranges](https://github.com/hritiksingh66/LeetCode/tree/master/1036-rotting-oranges) |
 | [1046-max-consecutive-ones-iii](https://github.com/hritiksingh66/LeetCode/tree/master/1046-max-consecutive-ones-iii) |
 | [1293-three-consecutive-odds](https://github.com/hritiksingh66/LeetCode/tree/master/1293-three-consecutive-odds) |
+| [1496-lucky-numbers-in-a-matrix](https://github.com/hritiksingh66/LeetCode/tree/master/1496-lucky-numbers-in-a-matrix) |
 | [1552-build-an-array-with-stack-operations](https://github.com/hritiksingh66/LeetCode/tree/master/1552-build-an-array-with-stack-operations) |
 | [1586-longest-subarray-of-1s-after-deleting-one-element](https://github.com/hritiksingh66/LeetCode/tree/master/1586-longest-subarray-of-1s-after-deleting-one-element) |
 | [1616-minimum-difference-between-largest-and-smallest-value-in-three-moves](https://github.com/hritiksingh66/LeetCode/tree/master/1616-minimum-difference-between-largest-and-smallest-value-in-three-moves) |
@@ -435,6 +436,7 @@
 |  |
 | ------- |
 | [1036-rotting-oranges](https://github.com/hritiksingh66/LeetCode/tree/master/1036-rotting-oranges) |
+| [1496-lucky-numbers-in-a-matrix](https://github.com/hritiksingh66/LeetCode/tree/master/1496-lucky-numbers-in-a-matrix) |
 | [2038-nearest-exit-from-entrance-in-maze](https://github.com/hritiksingh66/LeetCode/tree/master/2038-nearest-exit-from-entrance-in-maze) |
 ## Interactive
 |  |
