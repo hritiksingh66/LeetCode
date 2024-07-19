@@ -153,6 +153,7 @@
 | ------- |
 | [0215-kth-largest-element-in-an-array](https://github.com/hritiksingh66/LeetCode/tree/master/0215-kth-largest-element-in-an-array) |
 | [2379-maximum-total-importance-of-roads](https://github.com/hritiksingh66/LeetCode/tree/master/2379-maximum-total-importance-of-roads) |
+| [2413-smallest-number-in-infinite-set](https://github.com/hritiksingh66/LeetCode/tree/master/2413-smallest-number-in-infinite-set) |
 ## Math
 |  |
 | ------- |
@@ -360,6 +361,7 @@
 | [0726-number-of-atoms](https://github.com/hritiksingh66/LeetCode/tree/master/0726-number-of-atoms) |
 | [0835-linked-list-components](https://github.com/hritiksingh66/LeetCode/tree/master/0835-linked-list-components) |
 | [2306-create-binary-tree-from-descriptions](https://github.com/hritiksingh66/LeetCode/tree/master/2306-create-binary-tree-from-descriptions) |
+| [2413-smallest-number-in-infinite-set](https://github.com/hritiksingh66/LeetCode/tree/master/2413-smallest-number-in-infinite-set) |
 | [3225-length-of-longest-subarray-with-at-most-k-frequency](https://github.com/hritiksingh66/LeetCode/tree/master/3225-length-of-longest-subarray-with-at-most-k-frequency) |
 ## Bit Manipulation
 |  |
@@ -375,6 +377,7 @@
 |  |
 | ------- |
 | [0232-implement-queue-using-stacks](https://github.com/hritiksingh66/LeetCode/tree/master/0232-implement-queue-using-stacks) |
+| [2413-smallest-number-in-infinite-set](https://github.com/hritiksingh66/LeetCode/tree/master/2413-smallest-number-in-infinite-set) |
 ## Ordered Set
 |  |
 | ------- |
