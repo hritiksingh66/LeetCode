@@ -139,6 +139,7 @@
 | [1576-reorder-routes-to-make-all-paths-lead-to-the-city-zero](https://github.com/hritiksingh66/LeetCode/tree/master/1576-reorder-routes-to-make-all-paths-lead-to-the-city-zero) |
 | [1701-remove-max-number-of-edges-to-keep-graph-fully-traversable](https://github.com/hritiksingh66/LeetCode/tree/master/1701-remove-max-number-of-edges-to-keep-graph-fully-traversable) |
 | [2379-maximum-total-importance-of-roads](https://github.com/hritiksingh66/LeetCode/tree/master/2379-maximum-total-importance-of-roads) |
+| [2472-build-a-matrix-with-conditions](https://github.com/hritiksingh66/LeetCode/tree/master/2472-build-a-matrix-with-conditions) |
 ## Sorting
 |  |
 | ------- |
@@ -219,6 +220,7 @@
 | [2211-k-radius-subarray-averages](https://github.com/hritiksingh66/LeetCode/tree/master/2211-k-radius-subarray-averages) |
 | [2306-create-binary-tree-from-descriptions](https://github.com/hritiksingh66/LeetCode/tree/master/2306-create-binary-tree-from-descriptions) |
 | [2392-successful-pairs-of-spells-and-potions](https://github.com/hritiksingh66/LeetCode/tree/master/2392-successful-pairs-of-spells-and-potions) |
+| [2472-build-a-matrix-with-conditions](https://github.com/hritiksingh66/LeetCode/tree/master/2472-build-a-matrix-with-conditions) |
 | [2553-total-cost-to-hire-k-workers](https://github.com/hritiksingh66/LeetCode/tree/master/2553-total-cost-to-hire-k-workers) |
 | [2636-maximum-subsequence-score](https://github.com/hritiksingh66/LeetCode/tree/master/2636-maximum-subsequence-score) |
 | [2846-robot-collisions](https://github.com/hritiksingh66/LeetCode/tree/master/2846-robot-collisions) |
@@ -269,6 +271,7 @@
 |  |
 | ------- |
 | [1431-all-ancestors-of-a-node-in-a-directed-acyclic-graph](https://github.com/hritiksingh66/LeetCode/tree/master/1431-all-ancestors-of-a-node-in-a-directed-acyclic-graph) |
+| [2472-build-a-matrix-with-conditions](https://github.com/hritiksingh66/LeetCode/tree/master/2472-build-a-matrix-with-conditions) |
 ## Two Pointers
 |  |
 | ------- |
@@ -449,6 +452,7 @@
 | [1036-rotting-oranges](https://github.com/hritiksingh66/LeetCode/tree/master/1036-rotting-oranges) |
 | [1496-lucky-numbers-in-a-matrix](https://github.com/hritiksingh66/LeetCode/tree/master/1496-lucky-numbers-in-a-matrix) |
 | [2038-nearest-exit-from-entrance-in-maze](https://github.com/hritiksingh66/LeetCode/tree/master/2038-nearest-exit-from-entrance-in-maze) |
+| [2472-build-a-matrix-with-conditions](https://github.com/hritiksingh66/LeetCode/tree/master/2472-build-a-matrix-with-conditions) |
 ## Interactive
 |  |
 | ------- |
