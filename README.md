@@ -97,6 +97,7 @@
 | [1128-remove-all-adjacent-duplicates-in-string](https://github.com/hritiksingh66/LeetCode/tree/master/1128-remove-all-adjacent-duplicates-in-string) |
 | [1250-longest-common-subsequence](https://github.com/hritiksingh66/LeetCode/tree/master/1250-longest-common-subsequence) |
 | [1321-get-equal-substrings-within-budget](https://github.com/hritiksingh66/LeetCode/tree/master/1321-get-equal-substrings-within-budget) |
+| [1397-search-suggestions-system](https://github.com/hritiksingh66/LeetCode/tree/master/1397-search-suggestions-system) |
 | [1567-maximum-number-of-vowels-in-a-substring-of-given-length](https://github.com/hritiksingh66/LeetCode/tree/master/1567-maximum-number-of-vowels-in-a-substring-of-given-length) |
 | [1720-crawler-log-folder](https://github.com/hritiksingh66/LeetCode/tree/master/1720-crawler-log-folder) |
 | [1777-determine-if-two-strings-are-close](https://github.com/hritiksingh66/LeetCode/tree/master/1777-determine-if-two-strings-are-close) |
@@ -152,6 +153,7 @@
 | [0215-kth-largest-element-in-an-array](https://github.com/hritiksingh66/LeetCode/tree/master/0215-kth-largest-element-in-an-array) |
 | [0350-intersection-of-two-arrays-ii](https://github.com/hritiksingh66/LeetCode/tree/master/0350-intersection-of-two-arrays-ii) |
 | [0726-number-of-atoms](https://github.com/hritiksingh66/LeetCode/tree/master/0726-number-of-atoms) |
+| [1397-search-suggestions-system](https://github.com/hritiksingh66/LeetCode/tree/master/1397-search-suggestions-system) |
 | [1616-minimum-difference-between-largest-and-smallest-value-in-three-moves](https://github.com/hritiksingh66/LeetCode/tree/master/1616-minimum-difference-between-largest-and-smallest-value-in-three-moves) |
 | [1777-determine-if-two-strings-are-close](https://github.com/hritiksingh66/LeetCode/tree/master/1777-determine-if-two-strings-are-close) |
 | [2379-maximum-total-importance-of-roads](https://github.com/hritiksingh66/LeetCode/tree/master/2379-maximum-total-importance-of-roads) |
@@ -162,6 +164,7 @@
 |  |
 | ------- |
 | [0215-kth-largest-element-in-an-array](https://github.com/hritiksingh66/LeetCode/tree/master/0215-kth-largest-element-in-an-array) |
+| [1397-search-suggestions-system](https://github.com/hritiksingh66/LeetCode/tree/master/1397-search-suggestions-system) |
 | [2379-maximum-total-importance-of-roads](https://github.com/hritiksingh66/LeetCode/tree/master/2379-maximum-total-importance-of-roads) |
 | [2413-smallest-number-in-infinite-set](https://github.com/hritiksingh66/LeetCode/tree/master/2413-smallest-number-in-infinite-set) |
 | [2553-total-cost-to-hire-k-workers](https://github.com/hritiksingh66/LeetCode/tree/master/2553-total-cost-to-hire-k-workers) |
@@ -216,6 +219,7 @@
 | [1293-three-consecutive-odds](https://github.com/hritiksingh66/LeetCode/tree/master/1293-three-consecutive-odds) |
 | [1319-unique-number-of-occurrences](https://github.com/hritiksingh66/LeetCode/tree/master/1319-unique-number-of-occurrences) |
 | [1392-find-the-difference-of-two-arrays](https://github.com/hritiksingh66/LeetCode/tree/master/1392-find-the-difference-of-two-arrays) |
+| [1397-search-suggestions-system](https://github.com/hritiksingh66/LeetCode/tree/master/1397-search-suggestions-system) |
 | [1496-lucky-numbers-in-a-matrix](https://github.com/hritiksingh66/LeetCode/tree/master/1496-lucky-numbers-in-a-matrix) |
 | [1552-build-an-array-with-stack-operations](https://github.com/hritiksingh66/LeetCode/tree/master/1552-build-an-array-with-stack-operations) |
 | [1586-longest-subarray-of-1s-after-deleting-one-element](https://github.com/hritiksingh66/LeetCode/tree/master/1586-longest-subarray-of-1s-after-deleting-one-element) |
@@ -365,6 +369,7 @@
 | [0907-koko-eating-bananas](https://github.com/hritiksingh66/LeetCode/tree/master/0907-koko-eating-bananas) |
 | [1046-max-consecutive-ones-iii](https://github.com/hritiksingh66/LeetCode/tree/master/1046-max-consecutive-ones-iii) |
 | [1321-get-equal-substrings-within-budget](https://github.com/hritiksingh66/LeetCode/tree/master/1321-get-equal-substrings-within-budget) |
+| [1397-search-suggestions-system](https://github.com/hritiksingh66/LeetCode/tree/master/1397-search-suggestions-system) |
 | [2392-successful-pairs-of-spells-and-potions](https://github.com/hritiksingh66/LeetCode/tree/master/2392-successful-pairs-of-spells-and-potions) |
 ## Sliding Window
 |  |
@@ -482,6 +487,7 @@
 |  |
 | ------- |
 | [0208-implement-trie-prefix-tree](https://github.com/hritiksingh66/LeetCode/tree/master/0208-implement-trie-prefix-tree) |
+| [1397-search-suggestions-system](https://github.com/hritiksingh66/LeetCode/tree/master/1397-search-suggestions-system) |
 ## Data Stream
 |  |
 | ------- |
