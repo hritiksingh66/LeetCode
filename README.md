@@ -395,12 +395,14 @@
 |  |
 | ------- |
 | [0232-implement-queue-using-stacks](https://github.com/hritiksingh66/LeetCode/tree/master/0232-implement-queue-using-stacks) |
+| [0969-number-of-recent-calls](https://github.com/hritiksingh66/LeetCode/tree/master/0969-number-of-recent-calls) |
 | [1951-find-the-winner-of-the-circular-game](https://github.com/hritiksingh66/LeetCode/tree/master/1951-find-the-winner-of-the-circular-game) |
 ## Design
 |  |
 | ------- |
 | [0208-implement-trie-prefix-tree](https://github.com/hritiksingh66/LeetCode/tree/master/0208-implement-trie-prefix-tree) |
 | [0232-implement-queue-using-stacks](https://github.com/hritiksingh66/LeetCode/tree/master/0232-implement-queue-using-stacks) |
+| [0969-number-of-recent-calls](https://github.com/hritiksingh66/LeetCode/tree/master/0969-number-of-recent-calls) |
 | [2413-smallest-number-in-infinite-set](https://github.com/hritiksingh66/LeetCode/tree/master/2413-smallest-number-in-infinite-set) |
 ## Ordered Set
 |  |
@@ -474,4 +476,8 @@
 |  |
 | ------- |
 | [0208-implement-trie-prefix-tree](https://github.com/hritiksingh66/LeetCode/tree/master/0208-implement-trie-prefix-tree) |
+## Data Stream
+|  |
+| ------- |
+| [0969-number-of-recent-calls](https://github.com/hritiksingh66/LeetCode/tree/master/0969-number-of-recent-calls) |
 <!---LeetCode Topics End-->
