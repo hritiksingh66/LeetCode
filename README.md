@@ -86,6 +86,7 @@
 | [0071-simplify-path](https://github.com/hritiksingh66/LeetCode/tree/master/0071-simplify-path) |
 | [0072-edit-distance](https://github.com/hritiksingh66/LeetCode/tree/master/0072-edit-distance) |
 | [0151-reverse-words-in-a-string](https://github.com/hritiksingh66/LeetCode/tree/master/0151-reverse-words-in-a-string) |
+| [0208-implement-trie-prefix-tree](https://github.com/hritiksingh66/LeetCode/tree/master/0208-implement-trie-prefix-tree) |
 | [0224-basic-calculator](https://github.com/hritiksingh66/LeetCode/tree/master/0224-basic-calculator) |
 | [0394-decode-string](https://github.com/hritiksingh66/LeetCode/tree/master/0394-decode-string) |
 | [0399-evaluate-division](https://github.com/hritiksingh66/LeetCode/tree/master/0399-evaluate-division) |
@@ -372,6 +373,7 @@
 ## Hash Table
 |  |
 | ------- |
+| [0208-implement-trie-prefix-tree](https://github.com/hritiksingh66/LeetCode/tree/master/0208-implement-trie-prefix-tree) |
 | [0350-intersection-of-two-arrays-ii](https://github.com/hritiksingh66/LeetCode/tree/master/0350-intersection-of-two-arrays-ii) |
 | [0726-number-of-atoms](https://github.com/hritiksingh66/LeetCode/tree/master/0726-number-of-atoms) |
 | [0835-linked-list-components](https://github.com/hritiksingh66/LeetCode/tree/master/0835-linked-list-components) |
@@ -393,6 +395,7 @@
 ## Design
 |  |
 | ------- |
+| [0208-implement-trie-prefix-tree](https://github.com/hritiksingh66/LeetCode/tree/master/0208-implement-trie-prefix-tree) |
 | [0232-implement-queue-using-stacks](https://github.com/hritiksingh66/LeetCode/tree/master/0232-implement-queue-using-stacks) |
 | [2413-smallest-number-in-infinite-set](https://github.com/hritiksingh66/LeetCode/tree/master/2413-smallest-number-in-infinite-set) |
 ## Ordered Set
@@ -463,4 +466,8 @@
 |  |
 | ------- |
 | [0374-guess-number-higher-or-lower](https://github.com/hritiksingh66/LeetCode/tree/master/0374-guess-number-higher-or-lower) |
+## Trie
+|  |
+| ------- |
+| [0208-implement-trie-prefix-tree](https://github.com/hritiksingh66/LeetCode/tree/master/0208-implement-trie-prefix-tree) |
 <!---LeetCode Topics End-->
