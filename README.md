@@ -124,6 +124,7 @@
 | [1552-build-an-array-with-stack-operations](https://github.com/hritiksingh66/LeetCode/tree/master/1552-build-an-array-with-stack-operations) |
 | [1720-crawler-log-folder](https://github.com/hritiksingh66/LeetCode/tree/master/1720-crawler-log-folder) |
 | [1818-maximum-score-from-removing-substrings](https://github.com/hritiksingh66/LeetCode/tree/master/1818-maximum-score-from-removing-substrings) |
+| [2236-maximum-twin-sum-of-a-linked-list](https://github.com/hritiksingh66/LeetCode/tree/master/2236-maximum-twin-sum-of-a-linked-list) |
 | [2470-removing-stars-from-a-string](https://github.com/hritiksingh66/LeetCode/tree/master/2470-removing-stars-from-a-string) |
 | [2846-robot-collisions](https://github.com/hritiksingh66/LeetCode/tree/master/2846-robot-collisions) |
 ## Greedy
@@ -305,6 +306,7 @@
 | [0350-intersection-of-two-arrays-ii](https://github.com/hritiksingh66/LeetCode/tree/master/0350-intersection-of-two-arrays-ii) |
 | [0443-string-compression](https://github.com/hritiksingh66/LeetCode/tree/master/0443-string-compression) |
 | [2216-delete-the-middle-node-of-a-linked-list](https://github.com/hritiksingh66/LeetCode/tree/master/2216-delete-the-middle-node-of-a-linked-list) |
+| [2236-maximum-twin-sum-of-a-linked-list](https://github.com/hritiksingh66/LeetCode/tree/master/2236-maximum-twin-sum-of-a-linked-list) |
 | [2392-successful-pairs-of-spells-and-potions](https://github.com/hritiksingh66/LeetCode/tree/master/2392-successful-pairs-of-spells-and-potions) |
 | [2553-total-cost-to-hire-k-workers](https://github.com/hritiksingh66/LeetCode/tree/master/2553-total-cost-to-hire-k-workers) |
 ## Simulation
@@ -332,6 +334,7 @@
 | [0835-linked-list-components](https://github.com/hritiksingh66/LeetCode/tree/master/0835-linked-list-components) |
 | [2182-find-the-minimum-and-maximum-number-of-nodes-between-critical-points](https://github.com/hritiksingh66/LeetCode/tree/master/2182-find-the-minimum-and-maximum-number-of-nodes-between-critical-points) |
 | [2216-delete-the-middle-node-of-a-linked-list](https://github.com/hritiksingh66/LeetCode/tree/master/2216-delete-the-middle-node-of-a-linked-list) |
+| [2236-maximum-twin-sum-of-a-linked-list](https://github.com/hritiksingh66/LeetCode/tree/master/2236-maximum-twin-sum-of-a-linked-list) |
 | [2299-merge-nodes-in-between-zeros](https://github.com/hritiksingh66/LeetCode/tree/master/2299-merge-nodes-in-between-zeros) |
 ## Union Find
 |  |
