@@ -13,24 +13,29 @@
  *     }
  * }
  */
-class Solution{
-    private int result = 0;
-    
+class Solution {
+    class Pair{
+        int h = 0;
+        int d = 0;
+    }
+
+    public Pair solve(TreeNode root){
+        if(root == null){
+            return new Pair();
+        }
+
+        Pair lp = solve(root.left);
+        Pair rp = solve(root.right);
+
+        Pair sp = new Pair();
+        sp.h = Math.max(lp.h , rp.h) +1;
+        sp.d = Math.max(lp.h + rp.h , Math.max(lp.d , rp.d));
+        return sp;
+    }
+
     public int diameterOfBinaryTree(TreeNode root) {
-        solve(root);
-        return result;
+        Pair  ans = solve(root);
+        return ans.d;
     }
-
-    public int solve(TreeNode root){
-        if(root == null) return 0;
-
-        int left = solve(root.left);
-        int right = solve(root.right);
-
-        result = Math.max(result , right + left);
-
-        return Math.max(right , left) + 1;
-    }
-
 
 }
