@@ -22,17 +22,17 @@ class Solution {
         Queue<TreeNode> q = new LinkedList<>();
         q.offer(root);
 
-        int l = 0;
+        boolean flag = true;
         while (!q.isEmpty()) {
             int s = q.size();
             int i = 0;
             List<Integer> temp = new ArrayList<>();
             while (i < s) {
                 TreeNode k = q.poll();
-                if (l%2==0) {
+                if (flag) {
                     temp.add(k.val);
                 } else {
-                    temp.add(0,k.val);
+                    temp.addFirst(k.val);
                 }
 
                 if (k.left != null) {
@@ -45,7 +45,7 @@ class Solution {
                 i++;
             }
             ans.add(temp);
-            l++;
+            flag = !flag;
         }
 
         return ans;
