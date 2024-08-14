@@ -21,10 +21,11 @@ class Solution {
             return true;
         boolean leftSide = hasPathSum(root.left, tar - root.val);
         boolean rightSide = hasPathSum(root.right, tar - root.val);
-        if (leftSide || rightSide)
-            return true;
-        else
-            return false;
+        // if (leftSide || rightSide)
+        //     return true;
+        // else
+        //     return false;
+        return rightSide || leftSide;
     }
 
     public boolean hasPathSum(TreeNode root, int target){
