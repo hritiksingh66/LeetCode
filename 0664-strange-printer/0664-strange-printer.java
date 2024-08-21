@@ -1,30 +1,52 @@
 class Solution {
-    public int strangePrinter(String s) {
-        int n = s.length();
-        char[] sChar = s.toCharArray();
-        int[][] dp = new int[n][n];
-        for(int[] in : dp) Arrays.fill(in, -1);
-        return Util(0, n - 1, sChar, dp);
-    }
-    public int Util(int i, int j, char[] sChar, int[][] dp) {
-        if (i > j) {
+    int n;
+    int[][] t = new int[n+1][n+1];
+
+    public int solve(int l ,int r,String s){
+        if(l == r){
+            return 1;
+        }
+        if(l > r){
             return 0;
         }
 
-        if(dp[i][j] != -1) return dp[i][j];
-        
-        int firstLetter = sChar[i];
-        // in case, current character is not repeated in the rest of the string
-        int answer = 1 + Util(i + 1, j, sChar, dp);
-        for (int k = i + 1; k <= j; k++) {
-            // if repeated then update the answer
-            if (sChar[k] == firstLetter) {   
-                // splitting from i -> k - 1(remove the last character)
-                // and from k + 1 -> j             
-                int betterAnswer = Util(i, k - 1, sChar, dp) + Util(k + 1, j, sChar, dp);
-                answer = Math.min(answer, betterAnswer);
+        if(t[l][r] != -1){
+            return t[l][r];
+        }
+
+        int i = l+1;
+
+        while( i <= r && s.charAt(i)==s.charAt(l)){
+            i++;
+        }
+
+        if(l == r+1){ // out of bound as all char are same
+            return 1;
+        }
+
+        int basic = 1 + solve(i,r,s);
+
+        // Greedy wala tarika
+        int lalach = Integer.MAX_VALUE;
+
+        for(int j=i; j <= r; j++){
+            if(s.charAt(j) == s.charAt(l)){
+                int ans = solve(i , j-1,s) + solve(j , r, s);
+                lalach = Math.min(lalach , ans);
             }
         }
-        return dp[i][j] = answer;
+
+        return t[l][r] = Math.min(basic , lalach);
+    }
+    public int strangePrinter(String s) {
+        n = s.length();
+
+        for(int i = 0 ; i < n;i++){
+            for(int j = 0 ; j < n ; j++){
+                t[i][j] = -1; 
+            }
+        }
+        return solve(0,n-1,s);
+        
     }
 }
