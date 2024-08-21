@@ -1,6 +1,6 @@
 class Solution {
     int n;
-    int[][] t = new int[n+1][n+1];
+    int[][] t;
 
     public int solve(int l ,int r,String s){
         if(l == r){
@@ -41,12 +41,11 @@ class Solution {
     public int strangePrinter(String s) {
         n = s.length();
 
-        for(int i = 0 ; i < n;i++){
-            for(int j = 0 ; j < n ; j++){
-                t[i][j] = -1; 
-            }
+        t = new int[n][n+1];
+
+        for(int[] row : t){
+            Arrays.fill(row , -1);
         }
         return solve(0,n-1,s);
-        
     }
 }
