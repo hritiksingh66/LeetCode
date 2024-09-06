@@ -30,6 +30,8 @@ class Solution {
             }
         }
 
+        curr.next = null;
+
         if(mp.containsKey(head.val)){
             return head.next;
         }
