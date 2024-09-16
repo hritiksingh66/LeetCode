@@ -5,10 +5,10 @@ class Solution {
         int[] totalMinutes = new int[n];
 
         for(int i = 0 ; i < n; i++){
-            String[] str = timePoints.get(i).split(":");
+            String str = timePoints.get(i);
 
-            int hours = Integer.parseInt(str[0]);
-            int minutes = Integer.parseInt(str[1]);
+            int hours = Integer.parseInt(str.substring(0,2));
+            int minutes = Integer.parseInt(str.substring(3));
 
             totalMinutes[i] = hours * 60 + minutes;
         }
