@@ -1,27 +1,7 @@
 class MedianFinder {
 
-    private PriorityQueue<Integer> maxHeap; // max heap --> left part store karne ke liye
-    private PriorityQueue<Integer> minHeap; // min heap --> right part elements store karne ke liye
-
-    public MedianFinder() {
-
-        maxHeap = new PriorityQueue<>(new Comparator<Integer>() {
-            @Override
-            public int compare(Integer n1, Integer n2) {
-                return n2 - n1;
-            }
-        });
-
-        
-
-        minHeap = new PriorityQueue<>(new Comparator<Integer>(){
-            @Override
-            public int compare(Integer n1, Integer n2) {
-                return n1 - n2;
-            }
-        });
-
-    }
+    PriorityQueue<Integer> maxHeap = new PriorityQueue<>(Collections.reverseOrder()) ; // max heap --> left part store karne ke liye
+    PriorityQueue<Integer> minHeap = new PriorityQueue<>(); // min heap --> right part elements store karne ke liye
 
     public void addNum(int num) {
         if (maxHeap.isEmpty() || num < maxHeap.peek()) {
