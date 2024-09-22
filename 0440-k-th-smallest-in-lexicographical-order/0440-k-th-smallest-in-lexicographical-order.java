@@ -1,28 +1,31 @@
 class Solution {
-    private List<Integer> result = new ArrayList<>();
+    public int countNumbers(long curr, long next, int n) {
+        int countNum = 0;
 
-    public void solve(int n , int num,int count, int k){
-        // Base Case
-        if(num > n) return;
-
-        // Execute it
-        result.add(num);
-
-        if( count == k){
-            return;
+        while (curr <= n) {
+            countNum += Math.min(next, (long) n + 1) - curr;
+            curr *= 10;
+            next *= 10;
         }
 
-        solve(n , num*10 , count+1 , k);
-        if(num%10 != 9){
-            solve(n,num+1, count+1 , k);
-        }
-
+        return countNum;
     }
-      
-    public int findKthNumber(int n, int k){
 
-        solve(n,1,1,k);
+    public int findKthNumber(int n, int k) {
+        int curr = 1;
+        k -= 1;
 
-        return result.get(k-1);
+        while (k > 0) {
+            int count = countNumbers(curr, curr + 1, n);
+            if (count <= k) {
+                curr++;
+                k -= count;
+            } else {
+                curr *= 10;
+                k -= 1;
+            }
+        }
+
+        return curr;
     }
 }
