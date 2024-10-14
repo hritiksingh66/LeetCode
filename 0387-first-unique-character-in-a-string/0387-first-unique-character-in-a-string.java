@@ -9,6 +9,8 @@ class Solution {
 
             if(s.indexOf(ch) == s.lastIndexOf(ch)){
                 return i;
+            }else{
+                continue;
             }
         }
 
