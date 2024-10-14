@@ -3,17 +3,16 @@ class Solution {
 
         int ans = Integer.MAX_VALUE;
 
-        for(int i = 0 ; i < s.length() ; i++){
+        for(char c='a'; c <= 'z';c++){
 
-            char ch = s.charAt(i);
+            int index = s.indexOf(c);
 
-            if(s.indexOf(ch) == s.lastIndexOf(ch)){
-                return i;
-            }else{
-                continue;
+            if(index != -1 && index == s.lastIndexOf(c)){
+               ans = Math.min(index,ans);
             }
         }
 
-        return -1;
+
+        return ans == Integer.MAX_VALUE ? -1 : ans;
     }
 }
