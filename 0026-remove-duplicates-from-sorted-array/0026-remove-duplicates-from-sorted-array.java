@@ -6,15 +6,13 @@ class Solution {
             return 1;
         }
 
-        int i = 0 , j = 1;
+        int i = 0 ;
 
-        while(i < j && j < n){
+        for(int j = 1 ; j < n ; j++){
             if(nums[i]!=nums[j]){
                 nums[++i] = nums[j];
             }
-            j++;
         }
-
         return i+1;
     }
 }
