@@ -14,9 +14,7 @@ class Solution {
                 minPrice = prices[i];
             }
 
-            if(prices[i] > minPrice){
-                maxProfit = Math.max(prices[i]-minPrice,maxProfit); 
-            }
+            maxProfit = Math.max(prices[i]-minPrice,maxProfit); 
 
         }
 
