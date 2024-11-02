@@ -7,9 +7,9 @@ class Solution {
 
         String firstWord = sent[0];
 
-        // if(n == 1 && firstWord.charAt(0) == firstWord.charAt(firstWord.length()-1)){
-        //     return true;
-        // }
+        if(n == 1 && firstWord.charAt(0) == firstWord.charAt(firstWord.length()-1)){
+            return true;
+        }
         String lastWord = sent[n-1];
 
         if(lastWord.charAt(lastWord.length() - 1) != firstWord.charAt(0)){
