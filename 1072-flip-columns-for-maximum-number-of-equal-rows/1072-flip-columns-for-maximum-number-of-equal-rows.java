@@ -1,31 +1,24 @@
 class Solution {
     public int maxEqualRowsAfterFlips(int[][] matrix) {
-        int m = matrix.length;
-        int n = matrix[0].length;
 
+        Map<String, Integer> patternCount = new HashMap<>();
         int maxRows = 0;
 
-        for(int []currRow : matrix){
+        for (int[] row : matrix) {
+            StringBuilder pattern = new StringBuilder();
 
-            int[] inverted = new int[n];
+            int base = row[0];
 
-            for(int col = 0 ; col < n ; col++){
-
-                inverted[col] = currRow[col] == 0 ? 1 : 0;
-
+            for (int value : row) {
+                pattern.append(value == base ? '1' : '0');
             }
 
-            int count = 0;
+            String patternStr = pattern.toString();
+            patternCount.put(patternStr, patternCount.getOrDefault(patternStr, 0) + 1);
 
-            for(int []row : matrix){
-                if (Arrays.equals(row, currRow) || Arrays.equals(row, inverted)){
-                    count++;
-                }
-            }
-
-            maxRows = Math.max(maxRows , count);
+            maxRows = Math.max(maxRows, patternCount.get(patternStr));
         }
-        
+
         return maxRows;
     }
 }
