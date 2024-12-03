@@ -1,34 +1,39 @@
-class Solution{
-    private static boolean isPalidrome(String str){
-        int left=0;
-        int right=str.length()-1;
-        while(left<right){
-            if(str.charAt(left)==str.charAt(right)){
-                left++;
-                right--;
-                continue;
-            }
-            else{
-           
+class Solution {
 
-                return false;
-            }
-           
+    public static int start;
+    public static int end;
+    public static String longestPalindrome(String s) {
+        start = 0;
+        end =0;
         
-        } 
-        return true;
+        if(s.length()<=1) return s;
+
+        helper(s.toCharArray(), 0);
+
+        return s.substring(start, end+1);
     }
-    public String longestPalindrome(String s){
-        String longest_palidrome = "";
-        for(int i=0;i<s.length();i++)
-        for(int j=i+1;j<=s.length();j++){
-            String str1= s.substring(i,j);
-            if(isPalidrome(str1) && str1.length()>longest_palidrome.length()){
-                longest_palidrome = new String(str1);
-            }
 
+    private static void helper(char[] charArray, int i) {
+        int n = charArray.length;
+
+        if (i > n-1) return;
+
+        int left = i, right = i;
+
+        while(right < n-1 && charArray[right] == charArray[right +1]) right ++;
+
+        i = right;
+
+        while (left>0 && right <n-1 && charArray[left-1] == charArray[right+1]){
+            left--;
+            right++;
         }
-        return longest_palidrome;
-        
+
+        if(right -left > end - start) {
+            start = left;
+            end = right;
+        }
+
+        helper(charArray, ++i);
     }
 }
