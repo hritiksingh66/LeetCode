@@ -1,15 +1,18 @@
 class Solution {
     public boolean canConstruct(String s, int k) {
+        // Handle edge cases
         if (s.length() < k) return false;
-        int odds = 0;
-        HashMap<Character, Integer> counts = new HashMap<>();
-        for (Character c : s.toCharArray()) {
-            counts.put(c, counts.getOrDefault(c, 0) + 1);
+        if (s.length() == k) return true;
+
+        // Initialize oddCount as an integer bitmask
+        int oddCount = 0;
+
+        // Update the bitmask for each character in the string
+        for (char chr : s.toCharArray()) {
+            oddCount ^= 1 << (chr - 'a');
         }
-        for (Character c : counts.keySet()) {
-            if (counts.get(c) % 2 == 1) odds++;
-        }
-        if (odds > k) return false;
-        return true;
+
+        // Return if the number of odd frequencies is less than or equal to k
+        return Integer.bitCount(oddCount) <= k;
     }
 }
