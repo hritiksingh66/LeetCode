@@ -13,23 +13,23 @@
  *     }
  * }
  */
-class Solution{
-    // static int sum = 0;
-    public int solve(TreeNode root , int sum){
-        if(root == null) return 0;
+class Solution {
+    public int solve(TreeNode root , int num){
+        if(root == null){
+            return 0;
+        }
 
-        sum = sum*10 + root.val;
+        if(root.left == null && root.right == null){
+            return num*10 + root.val;
+        }
 
-        if(root.left == null && root.right == null)
-            return sum;
+        int leftSum = solve(root.left , num*10+root.val);
+        int rightSum = solve(root.right , num*10 + root.val);
 
-        return solve(root.left , sum)+solve(root.right , sum);
+        return leftSum + rightSum;
     }
-
+    
     public int sumNumbers(TreeNode root){
-
         return solve(root , 0);
     }
-        
 }
-
