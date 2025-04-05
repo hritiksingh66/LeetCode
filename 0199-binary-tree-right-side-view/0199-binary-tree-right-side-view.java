@@ -14,22 +14,27 @@
  * }
  */
 class Solution {
-     List<Integer> ans = new ArrayList<>();
-    public void dfsRecursive(TreeNode node, int level){
-        if(ans.size() == level) {
-            ans.add(node.val);
-        }
-        if(node.right!=null) dfsRecursive(node.right, level+1);
-        if(node.left!=null) dfsRecursive(node.left, level+1);
-        
-        
-    }
-    public List<Integer> rightSideView(TreeNode root) {
-        if(root == null){
-            return ans;
+
+    int visitedLevel = -1;
+
+    public void solve(TreeNode root,int currLevel , List<Integer> ans){
+
+        if(root == null) return;
+
+        if(currLevel > visitedLevel){
+            ans.add(root.val);
+            visitedLevel = currLevel; 
         }
 
-        dfsRecursive(root, 0);
+        solve(root.right ,currLevel + 1 , ans);
+        solve(root.left , currLevel + 1, ans);
+    }
+
+    public List<Integer> rightSideView(TreeNode root){
+        List<Integer> ans = new ArrayList<>();
+
+        solve(root, 0, ans);
+
         return ans;
     }
 }
