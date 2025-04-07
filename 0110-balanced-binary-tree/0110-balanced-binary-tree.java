@@ -16,32 +16,31 @@
 class Solution {
     public boolean isBalanced(TreeNode root){
 
-        return balanced(root);
+        return balanced(root).isBal;
         
     }
 
-    public boolean balanced(TreeNode root){
+    public BalaPair balanced(TreeNode root){
         if(root == null){
-            return true;
+            return new BalaPair();
         }
 
-        boolean left = balanced(root.left);
-        boolean right = balanced(root.right);
+        BalaPair left = balanced(root.left);
+        BalaPair right = balanced(root.right);
 
-        boolean sb = Math.abs(ht(root.left) - ht(root.right)) <= 1;
+        BalaPair sbp = new BalaPair();
+        sbp.ht = Math.max(left.ht , right.ht) + 1;
 
-        return left && right && sb; 
+        boolean sb = Math.abs(left.ht - right.ht) <= 1;
+
+        sbp.isBal = left.isBal && right.isBal && sb ;
+
+        return sbp; 
     }
 
-    public int ht(TreeNode root){
-        if(root == null){
-            return -1;
-        }
-
-        int lh = ht(root.left);
-        int rh = ht(root.right);
-
-        return Math.max(lh , rh) + 1;
-    }
+   class BalaPair{
+    boolean isBal = true;
+    int ht = -1;
+   }
 
 }
