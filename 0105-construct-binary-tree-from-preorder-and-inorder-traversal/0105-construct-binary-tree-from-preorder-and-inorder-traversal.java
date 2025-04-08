@@ -14,33 +14,33 @@
  * }
  */
 class Solution {
-    
-    public TreeNode solve(int[] inorder, int inStart, int inEnd, 
-                          int[] preorder, int preStart, int preEnd, 
-                          Map<Integer, Integer> mp) {
-        if (preStart > preEnd || inStart > inEnd) {
+
+    public TreeNode buildTree(int[] preorder,int[] inorder){
+            return build(preorder, 0, preorder.length - 1, inorder, 0, inorder.length - 1);
+        }
+
+    public TreeNode build(int[] preorder, int preStart, int preEnd, int[] inorder, int inStart, int inEnd) {
+        if (preStart > preEnd || inStart > inEnd) { // base case
             return null;
         }
 
-        TreeNode root = new TreeNode(preorder[preStart]);
+        int rootVal = preorder[preStart]; // root node value is the first element in preorder array
+        TreeNode root = new TreeNode(rootVal); // create a new TreeNode with root node value
 
-        int rootIndex = mp.get(root.val);
-        int leftVal = rootIndex - inStart;
-
-        root.left = solve(inorder, inStart, rootIndex - 1, preorder, preStart + 1, preStart + leftVal, mp);
-        root.right = solve(inorder, rootIndex + 1, inEnd, preorder, preStart + leftVal + 1, preEnd, mp);
-
-        return root;
-    }
-
-    public TreeNode buildTree(int[] preorder, int[] inorder) {
-        Map<Integer, Integer> mp = new HashMap<>();
-        
-        for (int i = 0; i < inorder.length; i++) {
-            mp.put(inorder[i], i);
+        // Find the index of the root in the inorder array linearly 
+        int rootIndex = 0; 
+        for (int i = inStart; i <= inEnd; i++) {
+            if (inorder[i] == rootVal) {
+                rootIndex = i;
+                break;
+            }
         }
 
-        return solve(inorder, 0, inorder.length - 1, 
-                     preorder, 0, preorder.length - 1, mp);
+        int leftSize = rootIndex - inStart; // Number of nodes in the left subtree
+
+        root.left = build(preorder, preStart + 1, preStart + leftSize, inorder, inStart, rootIndex - 1); // Left subtree
+        root.right = build(preorder, preStart + leftSize + 1, preEnd, inorder, rootIndex + 1, inEnd); // Right subtree
+
+        return root;
     }
 }
