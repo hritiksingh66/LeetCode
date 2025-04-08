@@ -34,9 +34,9 @@ class Solution {
             } else if (root.right == null) {
                 return root.left;
             } else {
-                int max = max(root.left);
-                root.left = delete(root.left, max);
-                root.val = max;
+                int min = min(root.right);
+                root.right = delete(root.right, min);
+                root.val = min;
             }
         }
 
@@ -49,5 +49,13 @@ class Solution {
         }
         int right = max(node.right);
         return Math.max(node.val, right);
+    }
+
+    private int min(TreeNode node) {
+        if (node == null) {
+            return Integer.MAX_VALUE;
+        }
+        int right = min(node.left);
+        return Math.min(node.val, right);
     }
 }
