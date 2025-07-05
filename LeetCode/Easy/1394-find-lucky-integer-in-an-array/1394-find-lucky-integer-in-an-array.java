@@ -1,18 +1,14 @@
 class Solution {
     public int findLucky(int[] arr) {
-        Map<Integer,Integer> map = new HashMap<>();
-
+        int[] freq = new int[501];
         for(int num : arr){
-            map.put(num,map.getOrDefault(num,0)+1);
+            freq[num]++;
         }
 
-        int res = -1;
-
-        for(int num : map.keySet()){
-            if(num == map.get(num)){
-                res = Math.max(res,num);
-            }
+        for(int i = 500 ; i > 0;i--){
+            if(freq[i] == i) return i;
         }
-        return res;
+
+        return -1;
     }
 }
