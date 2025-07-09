@@ -23,7 +23,7 @@ class Solution {
         n = freeTime.size();
         while (j < n) {
             currSum += freeTime.get(j);
-            while (i<n && j-i+1 > k+1) {
+            if(i<n && j-i+1 > k+1) {
                 currSum -= freeTime.get(i);
                 i++;
             }
