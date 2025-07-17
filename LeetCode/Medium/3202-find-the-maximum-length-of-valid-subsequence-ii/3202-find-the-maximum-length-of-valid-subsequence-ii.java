@@ -6,7 +6,7 @@ class Solution {
         for (int num : nums) {
             int x = num % k;
             for (int j = 0; j < k; j++) {
-                int y = (j - x + 2) % k;
+                int y = (j - x + k) % k;
                 dp[x][y] = dp[y][x] + 1;
                 ans = Math.max(ans, dp[x][y]);
             }
