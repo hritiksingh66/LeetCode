@@ -46,13 +46,13 @@ class Solution {
     public void BFS(List<List<Integer>> adj,int u,boolean[] visited){
         Queue<Integer> que = new LinkedList<>();
         que.add(u);
+        visited[u] = true;
         while(!que.isEmpty()){
             int src = que.poll();
 
             for(int nbr : adj.get(src)){
                 if(!visited[nbr]){
-                    que.add(nbr);
-                    visited[nbr] = true;
+                    BFS(adj,nbr,visited);
                 }
             } 
         }
