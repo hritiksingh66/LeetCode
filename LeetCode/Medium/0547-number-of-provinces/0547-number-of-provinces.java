@@ -24,7 +24,7 @@ class Solution {
 
         for(int i = 0 ; i < V;i++){
             if(!visited[i]){
-                DFS(adj,i,visited);
+                BFS(adj,i,visited);
                 res++;
             }
         }
@@ -42,4 +42,19 @@ class Solution {
             }
         }
     } 
+
+    public void BFS(List<List<Integer>> adj,int u,boolean[] visited){
+        Queue<Integer> que = new LinkedList<>();
+        que.add(u);
+        while(!que.isEmpty()){
+            int src = que.poll();
+
+            for(int nbr : adj.get(src)){
+                if(!visited[nbr]){
+                    que.add(nbr);
+                    visited[nbr] = true;
+                }
+            } 
+        }
+    }
 }
