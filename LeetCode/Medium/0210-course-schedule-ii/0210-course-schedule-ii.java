@@ -1,55 +1,56 @@
 class Solution {
-    public int[] findOrder(int V, int[][] edges){
+    boolean hasCycle = false;
+    public void DFS(List<List<Integer>> adj, int u, boolean[] visited, boolean[] inRecurs,Stack<Integer> st) {
+        visited[u] = true;
+        inRecurs[u] = true;
 
+        for (int nbr : adj.get(u)){
+            // If already in RecurS means it has cycle
+            if(inRecurs[nbr]) {
+                hasCycle = true;
+                return;
+            }
+            // if not visited,then we check for cycle in DFS
+            if (!visited[nbr]) {
+                DFS(adj,nbr,visited,inRecurs,st);
+            } 
+        }
+
+        st.push(u);
+        inRecurs[u] = false;
+    }
+
+    public int[] findOrder(int V, int[][] edges) {
         // Make adjacency List
         List<List<Integer>> adj = new ArrayList<>();
 
-        for(int i = 0 ; i < V ; i++){
+        for (int i = 0; i < V; i++) {
             adj.add(new ArrayList<>());
         }
 
-        int[] indegree = new int[V];
-
-        for(int[] edge : edges){
+        for (int[] edge : edges) {
             int u = edge[0];
             int v = edge[1];
 
             adj.get(v).add(u);
-            indegree[u]++;
         }
-        
 
-        //Fill the que with node having 0 indegree
-        Queue<Integer> que = new LinkedList<>();
-        int count = 0;
-        for(int u = 0 ; u < V ; u++){
-            if(indegree[u] == 0){
-                // res[pos++] = u;
-                que.add(u);
-                count++;
+        boolean[] visited = new boolean[V];
+        boolean[] inRecurs = new boolean[V];
+
+        Stack<Integer> st = new Stack<>();
+
+        for(int i = 0 ; i < V;i++){
+            if(!visited[i]){
+                DFS(adj,i,visited,inRecurs,st);
+                if(hasCycle) return new int[0];
             }
         }
 
-
-        // simple BFS
         int[] res = new int[V];
-        int pos = 0;
-
-        while(!que.isEmpty()){
-            int u = que.poll();
-            res[pos++] = u;
-
-            for(int v : adj.get(u)){
-                indegree[v]--;
-                if(indegree[v]==0){
-                    que.add(v);
-                    count++;
-                }
-            }
+        for(int i=0;i<V;i++){
+            res[i] = st.pop();
         }
-
-        if(count == V) return res;
-
-        return new int[0];
+        return res;
     }
 }
