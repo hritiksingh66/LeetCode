@@ -1,5 +1,6 @@
 class Solution {
     public boolean canFinish(int V, int[][] prerequisites){
+        if(prerequisites.length == 0) return true;
         List<List<Integer>> adj = new ArrayList<>();
 
         for(int i = 0 ; i < V; i++){
