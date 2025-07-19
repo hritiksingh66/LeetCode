@@ -1,47 +1,46 @@
-class Solution {
-    public boolean canFinish(int V, int[][] prerequisites){
-        if(prerequisites.length == 0) return true;
-        List<List<Integer>> adj = new ArrayList<>();
+class Solution{
+   public boolean DFS(List<List<Integer>> adj,int u,boolean[] visited,boolean[] inRecurs){
+        visited[u] = true;
+        inRecurs[u] = true;
+        
+        for(int nbr : adj.get(u)){
+            // if not visited,then we check for cycle in DFS
+            if(!visited[nbr] && DFS(adj,nbr,visited,inRecurs)){
+                return true;
+            }else if(inRecurs[nbr]){
+                return true;
+            }
+        }
+        
+        inRecurs[u] = false;
+        
+        return false;
+    }
 
+    public boolean canFinish(int V, int[][] prerequisites){
+        // if(prerequisites.length == 0) return true;
+        List<List<Integer>> adj = new ArrayList<>();
         for(int i = 0 ; i < V; i++){
             adj.add(new ArrayList<>());
         }
-        // Indegree
-        int[] indegree = new int[V];
 
         for(int[] vec : prerequisites){
             int u = vec[0];
             int v = vec[1];
 
             adj.get(v).add(u);
-            indegree[u]++;
         }
 
-        int count = 0;
+        boolean[] visited = new boolean[V];
 
-        Queue<Integer> que = new LinkedList<>();
-        // Fill the queue with 0 indegree
-        for(int u = 0 ; u < V; u++){
-            if(indegree[u] == 0){
-                que.add(u);
-                count++;
+        boolean[] inRecurs = new boolean[V];
+
+        for(int i = 0 ; i < V ; i++){
+            if(!visited[i] && DFS(adj,i,visited,inRecurs)){
+                return false;
             }
         }
 
-        while(!que.isEmpty()){
-            int u = que.poll();
-
-            for(int v : adj.get(u)){
-                indegree[v]--;
-
-                if(indegree[v] == 0){
-                    count++;
-                    que.add(v);
-                }
-            }
-        }
-        
-        if(count == V) return true;
-        return false;
+        return true;
     }
 }
