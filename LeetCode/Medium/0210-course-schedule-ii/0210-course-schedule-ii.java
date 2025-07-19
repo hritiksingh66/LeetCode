@@ -17,20 +17,22 @@ class Solution {
             adj.get(v).add(u);
             indegree[u]++;
         }
+        
 
         //Fill the que with node having 0 indegree
         Queue<Integer> que = new LinkedList<>();
         int count = 0;
         for(int u = 0 ; u < V ; u++){
             if(indegree[u] == 0){
+                // res[pos++] = u;
                 que.add(u);
                 count++;
             }
         }
 
-        int[] res = new int[V];
 
         // simple BFS
+        int[] res = new int[V];
         int pos = 0;
 
         while(!que.isEmpty()){
@@ -46,8 +48,8 @@ class Solution {
             }
         }
 
-        if(count < V) return new int[0];
+        if(count == V) return res;
 
-        return res;
+        return new int[0];
     }
 }
