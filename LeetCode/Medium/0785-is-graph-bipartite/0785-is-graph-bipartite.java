@@ -1,39 +1,36 @@
 class Solution {
-    public boolean isBipartiteBFS(int[][] adj,int u,int[] color,int currColor){
-        Queue<Integer> que = new LinkedList<>();
-        que.add(u);
-
-        color[u] = currColor;
-
-        while(!que.isEmpty()){
-            int currNode = que.poll();
-
-            for(int nbr : adj[currNode]){
-                if(color[nbr] == color[currNode]){
-                    return false;
-                }else if(color[nbr] == -1){ // never colored(visited)
-                    color[nbr] = 1-color[currNode];
-                    que.add(nbr);
-                }
-            }
-            
+    class BipartitePair{
+        int vtx;
+        int dist;
+        public BipartitePair(int vtx , int dist){
+            this.vtx = vtx;
+            this.dist = dist;
         }
-        return true;
     }
+    
+    public boolean isBipartite(int[][] graph){
+        HashMap<Integer,Integer> visited = new HashMap<>();
+        Queue<BipartitePair> q = new LinkedList<>();
 
-    public boolean isBipartite(int[][] graph) {
-        int V = graph.length;
-
-        int[] color = new int[V];
-
-        Arrays.fill(color, -1); // Initially no node is colored
-
-        // Red = 1 , green = 0
-
-        for (int i = 0; i < V; i++) {
-            if (color[i] == -1) {
-                if (!isBipartiteBFS(graph, i, color, 1)) {
-                    return false;
+        for(int src = 0 ; src < graph.length ; src++){
+            if(visited.containsKey(src)){
+                continue;
+            }
+            q.add(new BipartitePair(src,0));
+            while(!q.isEmpty()){
+                BipartitePair rv = q.poll();
+                if(visited.containsKey(rv.vtx)){
+                    if(visited.get(rv.vtx) != rv.dist){
+                        return false;
+                    }
+                    continue;
+                }
+                visited.put(rv. vtx , rv.dist);
+                for(int nbrs : graph[rv.vtx]){
+                    if(!visited.containsKey(nbrs)){
+                        BipartitePair newPair = new BipartitePair(nbrs , rv.dist + 1);
+                        q.add(newPair);
+                    }
                 }
             }
         }
