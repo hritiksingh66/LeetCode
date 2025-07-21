@@ -1,9 +1,11 @@
 class Solution {
-    int[] parent = new int[27];
-    int[] rank = new int[27];
+    int[] parent; 
+    int[] rank;
 
     public boolean equationsPossible(String[] equations){
-        for(int i = 0 ; i < 27;i++){
+        rank = new int[26];
+        parent = new int[26];
+        for(int i = 0 ; i < 26;i++){
             parent[i] = i;
         }
 
@@ -20,8 +22,8 @@ class Solution {
             char frstChar = str.charAt(0);
             char secChar = str.charAt(3);
             if(str.charAt(1)=='!'){
-                int first_idx = frstChar - 'a' + 1; 
-                int sec_idx = secChar - 'a' + 1; 
+                int first_idx = frstChar - 'a'; 
+                int sec_idx = secChar - 'a'; 
                 if(find(first_idx) == find(sec_idx)){
                     return false;
                 }
@@ -41,8 +43,8 @@ class Solution {
     }
 
     public void union(char a, char b){
-        int idx_a = a - 'a' + 1;
-        int idx_b = b - 'a' + 1;
+        int idx_a = a - 'a';
+        int idx_b = b - 'a';
 
         int parent_a = find(idx_a);
         int parent_b = find(idx_b);
