@@ -11,20 +11,18 @@ class Solution {
 
 
         for(String str : equations){
-            char frstChar = str.charAt(0);
-            char secChar = str.charAt(3);
             if(str.charAt(1)=='='){
-                union(frstChar,secChar);
+                int x = str.charAt(0)-'a';
+                int y = str.charAt(3)-'a';
+                union(x,y);
             }
         }
 
         for(String str : equations){
-            char frstChar = str.charAt(0);
-            char secChar = str.charAt(3);
             if(str.charAt(1)=='!'){
-                int first_idx = frstChar - 'a'; 
-                int sec_idx = secChar - 'a'; 
-                if(find(first_idx) == find(sec_idx)){
+                int x = str.charAt(0)-'a';
+                int y = str.charAt(3)-'a';
+                if(find(x) == find(y)){
                     return false;
                 }
             }
@@ -42,24 +40,21 @@ class Solution {
         return parent[idx] = find(parent[idx]);
     }
 
-    public void union(char a, char b){
-        int idx_a = a - 'a';
-        int idx_b = b - 'a';
+    public void union(int x, int y){
+        int parent_x = find(x);
+        int parent_y = find(y);
 
-        int parent_a = find(idx_a);
-        int parent_b = find(idx_b);
-
-        if(parent_a == parent_b){
+        if(parent_x == parent_y){
             return;
         }
 
-        if(rank[parent_a] > rank[parent_b]){
-            parent[parent_b] = parent_a;
-        }else if(rank[parent_a] < rank[parent_b]){
-            parent[parent_a] = parent_b;
+        if(rank[parent_x] > rank[parent_y]){
+            parent[parent_y] = parent_x;
+        }else if(rank[parent_x] < rank[parent_y]){
+            parent[parent_x] = parent_y;
         }else{
-            parent[parent_a] = parent_b;
-            rank[parent_b] += 1;
+            parent[parent_x] = parent_y;
+            rank[parent_y] += 1;
         }
     }
 }
