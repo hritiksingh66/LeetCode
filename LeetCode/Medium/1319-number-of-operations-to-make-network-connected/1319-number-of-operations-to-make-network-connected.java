@@ -3,6 +3,7 @@ class Solution {
     int[] rank; 
     public int makeConnected(int n, int[][] connections){
         int edges = connections.length;
+         // n nodes ke liye min n-1 edges chahie hoga and if edges us sey kam ho to kabhi saare nodes ko apas me connect nahi kar payenge
         if( edges < (n-1)) return -1;
 
         parent = new int[n];
@@ -26,7 +27,7 @@ class Solution {
             }
         }
 
-        return n - 1;
+        return n - 1; // n components ko connect krne ke liye minimum n-1 edges to chahiye na guru
     }
 
 
