@@ -1,13 +1,44 @@
 class Solution {
     public int findTargetSumWays(int[] nums, int target) {
-        return rec(nums,target,0);
-    }
-    public static int rec(int[] nums,int target,int i){
-        if (i == nums.length) {
-            return target == 0 ? 1 : 0;
+        int n = nums.length;
+        int arrSum = 0;
+        
+        for (int num : nums) {
+            arrSum += num;
         }
-        int take1 = rec(nums, target - nums[i], i + 1);
-        int take2 = rec(nums, target + nums[i], i + 1);
-        return take1 + take2;
+
+        if ((target + arrSum) % 2 != 0 || target > arrSum || (target + arrSum) < 0) {
+            return 0;
+        }
+
+        int sum = (target + arrSum) / 2;
+        // int[][] dp = new int[n + 1][sum + 1];
+
+        // dp[0][0] = 1;
+
+        // for (int i = 1; i < n + 1; i++) {
+        //     for (int j = 0; j <= sum; j++) {
+        //         dp[i][j] = dp[i - 1][j];
+        //         if (nums[i - 1] <= j) {
+        //             dp[i][j] += dp[i - 1][j - nums[i - 1]];
+        //         }
+        //     }
+        // }
+
+        // return dp[n][sum];
+
+        return solve(nums,sum,n);
+    }
+
+    int solve(int[] nums,int sum, int n){
+        // Base Case
+        if(sum == 0) return 1;
+        if(n==0) return 0;
+
+        if(nums[n-1] <= sum){
+            return solve(nums,sum-nums[n-1],n-1) + solve(nums,sum,n-1);
+        }else{
+            return solve(nums,sum,n-1);
+        }
     }
 }
