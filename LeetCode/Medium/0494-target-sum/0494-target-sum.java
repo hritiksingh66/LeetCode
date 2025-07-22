@@ -12,28 +12,16 @@ class Solution {
         }
 
         int sum = (target + arrSum) / 2;
-        // int[][] dp = new int[n + 1][sum + 1];
-
-        // dp[0][0] = 1;
-
-        // for (int i = 1; i < n + 1; i++) {
-        //     for (int j = 0; j <= sum; j++) {
-        //         dp[i][j] = dp[i - 1][j];
-        //         if (nums[i - 1] <= j) {
-        //             dp[i][j] += dp[i - 1][j - nums[i - 1]];
-        //         }
-        //     }
-        // }
-
-        // return dp[n][sum];
 
         return solve(nums,sum,n);
     }
 
     int solve(int[] nums,int sum, int n){
         // Base Case
-        if(sum == 0) return 1;
-        if(n==0) return 0;
+        if(n == 0){
+            if(sum==0) return 1;
+            else return 0;
+        }
 
         if(nums[n-1] <= sum){
             return solve(nums,sum-nums[n-1],n-1) + solve(nums,sum,n-1);
