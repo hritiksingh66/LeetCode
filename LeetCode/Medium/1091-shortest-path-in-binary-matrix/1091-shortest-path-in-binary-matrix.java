@@ -1,64 +1,73 @@
 class Solution {
-    int[][] direction = {{1,1},{1,0},{0,1},{-1,0},{0,-1},{1,-1},{-1,1},{-1,-1}};
+    int[][] DIRECTION = {{1,1},{1,0},{0,1},{-1,0},{0,-1},{-1,-1},{1,-1},{-1,1}};
     public int shortestPathBinaryMatrix(int[][] grid){
-        int m = grid.length;
-        int n = grid[0].length;
+        int n = grid.length;
 
-        if(m == 0 || n == 0 || grid[0][0] != 0){
+        if(grid[0][0] != 0 || grid[n-1][n-1] != 0){
             return -1;
         }
 
-        Queue<Pair> qu = new LinkedList<>();
+        int[][] result = new int[n][n];
 
-        qu.add(new Pair(0,0));
-
-        grid[0][0] = 1; // marked visit
-
-        int count = 0;
-
-        while(!qu.isEmpty()){
-            int s = qu.size();
-
-            while(s-- > 0){
-                Pair u = qu.poll();
-                int x = u.x;
-                int y = u.y;
-
-                if(x == n-1 && y == m-1){
-                    return count + 1;
-                }
-
-                for(int[] dir : direction){
-                    int x_next = x + dir[0];
-                    int y_next = y + dir[1];
-
-                    if(isSafe(x_next,y_next,m,n) && grid[x_next][y_next] == 0){
-                        qu.add(new Pair(x_next,y_next));
-                        grid[x_next][y_next] = 1;
-                    }
-
-                }
-
-            }
-            count++;
+        for(int[] res: result){
+            Arrays.fill(res,Integer.MAX_VALUE);
         }
 
-        return -1;
-        
+        PriorityQueue<Pair> pq = new PriorityQueue<>((a,b) -> a.dist - b.dist);
+
+        pq.add(new Pair(1,new InnerPair(0,0)));
+        grid[0][0] = 1; // mark visit
+        result[0][0] = 0;
+        while(!pq.isEmpty()){
+            Pair curr = pq.poll();
+            int dist = curr.dist;
+
+            InnerPair ip = curr.cord;
+            int x = ip.x;
+            int y = ip.y;
+
+
+            for(int[] dir : DIRECTION){
+                int x_next = x + dir[0];
+                int y_next = y + dir[1];
+
+                if(isSafe(x_next,y_next, n) && grid[x_next][y_next] == 0){
+                    if(dist + 1 < result[x_next][y_next]){
+                        result[x_next][y_next] = dist + 1;
+                        pq.add(new Pair(result[x_next][y_next],new InnerPair(x_next,y_next)));
+                        grid[x_next][y_next] = 1; // mark visited as it added in pq
+                    }
+                }
+            }
+        }
+
+        if(result[n-1][n-1] == Integer.MAX_VALUE){
+            return -1;
+        }
+
+        return result[n-1][n-1];
     }
 
-    public boolean isSafe(int x,int y,int m, int n){
-        if(x < m && y < m && x >= 0 && y >= 0){
-            return true;
-        }
-        return false;
+    public boolean isSafe(int x, int y, int n){
+        return x >= 0 && x < n && y >= 0 && y < n;
     }
 }
 
 class Pair{
+    int dist;
+    InnerPair cord;
+
+    Pair(int dist, InnerPair cord){
+        this.dist = dist;
+        this.cord = cord;
+    }
+}
+
+class InnerPair{
     int x;
     int y;
-    Pair(int x , int y){
+
+    InnerPair(int x,int y){
         this.x = x;
         this.y = y;
     }
