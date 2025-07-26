@@ -4,37 +4,42 @@ class Solution {
         int rows = heights.length;
         int cols = heights[0].length;
 
-        PriorityQueue<Pair> pq = new PriorityQueue<>((a,b) -> a.diff - b.diff);
+        PriorityQueue<Cell> pq = new PriorityQueue<>((a,b) -> a.diff - b.diff);
 
         int[][] res = new int[rows][cols];
 
         for(int[] arr : res){
             Arrays.fill(arr,Integer.MAX_VALUE);
         }
-        pq.add(new Pair(0,new InnerPair(0,0)));
+        pq.add(new Cell(0,0,0));
         res[0][0] = 0;
 
         while(!pq.isEmpty()){
-            Pair p = pq.poll();
+            Cell p = pq.poll();
 
-            int diff = p.diff;
-            int x = p.cord.x;
-            int y = p.cord.y;
+            if (p.x == rows - 1 && p.y == cols - 1) {
+                return p.diff;
+            }
+
+            // int diff = p.diff;
+            // int x = p.x;
+            // int y = p.y;
 
             // if(x == row - 1 && y == cols -1){
             //     return res[x][y];
             // }
 
             for(int[] dir : DIRECTION){
-                int nx = x+dir[0];
-                int ny = y+dir[1];
+                int nx = p.x+dir[0];
+                int ny = p.y+dir[1];
 
 
                 if(isSafe(nx,ny,rows,cols)){
-                    int maxAbsDiff = Math.max(diff,Math.abs(heights[nx][ny]-heights[x][y]));
-                    if(maxAbsDiff < res[nx][ny]){
-                        res[nx][ny] = maxAbsDiff;
-                        pq.add(new Pair(res[nx][ny],new InnerPair(nx,ny)));
+                    int heightDiff = Math.abs(heights[nx][ny] - heights[p.x][p.y]);
+                    int maxEffort = Math.max(p.diff, heightDiff);
+                    if(maxEffort < res[nx][ny]){
+                        res[nx][ny] = maxEffort;
+                        pq.add(new Cell(res[nx][ny],nx,ny));
                     }
                 }
             }
@@ -46,24 +51,15 @@ class Solution {
     public boolean isSafe(int x, int y , int rows, int cols){
         return x >=0 && x < rows && y >= 0 && y < cols;
     }
-}
+    private static class Cell{
+        int diff;
+        int x;
+        int y;
 
-class Pair{
-    int diff;
-    InnerPair cord;
-
-    Pair(int diff , InnerPair cord){
-        this.diff = diff;
-        this.cord = cord;
-    }
-}
-
-class InnerPair{
-    int x;
-    int y;
-
-    InnerPair(int x, int y){
-        this.x = x;
-        this.y = y;
+        Cell(int diff , int x,int y){
+            this.diff = diff;
+            this.x = x;
+            this.y = y;
+        }
     }
 }
