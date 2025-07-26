@@ -4,7 +4,7 @@ class Solution {
         int m = grid.length;
         int n = grid[0].length;
 
-        if( grid[0][0] != 0 || grid[m-1][n -1] != 0){
+        if(m == 0 || n == 0 || grid[0][0] != 0){
             return -1;
         }
 
@@ -14,7 +14,7 @@ class Solution {
 
         grid[0][0] = 1; // marked visit
 
-        int steps = 1;
+        int count = 0;
 
         while(!qu.isEmpty()){
             int s = qu.size();
@@ -25,7 +25,7 @@ class Solution {
                 int y = u.y;
 
                 if(x == n-1 && y == m-1){
-                    return steps;
+                    return count + 1;
                 }
 
                 for(int[] dir : direction){
@@ -40,7 +40,7 @@ class Solution {
                 }
 
             }
-            steps++;
+            count++;
         }
 
         return -1;
