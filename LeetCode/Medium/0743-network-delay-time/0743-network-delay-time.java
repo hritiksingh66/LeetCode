@@ -20,7 +20,6 @@ class Solution {
         int[] res = new int[n+1];
         Arrays.fill(res, Integer.MAX_VALUE);
         res[k] = 0;
-        res[0] = -1;
 
         pq.add(new Pair(0,k));
 
@@ -28,6 +27,8 @@ class Solution {
             Pair curr = pq.poll();
             int u_time = curr.node;
             int u = curr.time;
+
+            if (u_time > res[u]) continue;
 
             for(Pair nbr : adj.get(u)){
                 int nbr_node = nbr.node;
@@ -41,15 +42,15 @@ class Solution {
             } 
         }
 
-        int result = -1;
+        int maxAns = 0;
 
-        for(int el : res){
-            result = Math.max(result,el);
+        for(int i = 1; i < res.length;i++){
+            if(res[i] == Integer.MAX_VALUE) return -1;
+            maxAns = Math.max(maxAns,res[i]);
         }
 
-        if(result == Integer.MAX_VALUE) return -1;
 
-        return result;
+        return maxAns;
     }
 }
 
