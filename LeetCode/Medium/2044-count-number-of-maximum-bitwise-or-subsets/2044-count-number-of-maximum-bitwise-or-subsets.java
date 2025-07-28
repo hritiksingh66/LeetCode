@@ -1,25 +1,24 @@
 class Solution {
+    int count = 0;
+    int targetOR;
     public int countMaxOrSubsets(int[] nums) {
-        int n = nums.length;
-        int maxOR = 0;
-        int count = 0;
-
-        int size = 1 << n;
+        targetOR = 0;
         for (int num : nums) {
-            maxOR |= num;
+            targetOR |= num;
         }
-        for (int mask = 1; mask < size; mask++) {
-            int currOR = 0;
-            for (int i = 0; i < n; i++) {
-                if ((mask & (1 << i)) != 0) {
-                    currOR |= nums[i];
-                }
-            }
-            if (currOR == maxOR) {
-                count++;
-            }
-        }
+        backtrack(nums, 0, 0);
 
         return count;
+    }
+
+    private void backtrack(int[] nums, int index, int currOR) {
+        if (index == nums.length) {
+            if (currOR == targetOR) {
+                count++;
+            }
+            return;
+        }
+        backtrack(nums, index + 1, currOR | nums[index]);
+        backtrack(nums, index + 1, currOR);
     }
 }
