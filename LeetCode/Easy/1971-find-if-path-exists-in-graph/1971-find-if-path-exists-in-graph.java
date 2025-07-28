@@ -37,8 +37,8 @@ class Solution {
         for(int[] e:edges){
             int u = e[0];
             int v = e[1];
-            if(find(u)== find(v)) continue;
-            union(u,v);
+            if(find(src) == find(des)) return true;
+            if(find(u) != find(v)) union(u,v);
         }
         return find(src) == find(des);
     }
