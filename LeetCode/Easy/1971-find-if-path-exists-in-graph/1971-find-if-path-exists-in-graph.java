@@ -1,36 +1,46 @@
 class Solution {
+    int[] parent;
+    int[] rank;
+    public int find(int x){
+        if(parent[x] == x){
+            return x;
+        }
+
+        return parent[x] = find(parent[x]);
+    }
+
+    public void union(int u, int v){
+        int u_par = find(u);
+        int v_par = find(v);
+
+        if(u_par == v_par){
+            return;
+        }
+
+        if(rank[u_par] > rank[v_par]){
+            parent[v_par] = u_par; 
+        }else if(rank[u_par] < rank[v_par]){
+            parent[u_par] = v_par; 
+        }else{
+            parent[v_par] = u_par;
+            rank[v_par] += 1;
+        }
+
+    }
     public boolean validPath(int n, int[][] edges, int src, int des){
-        List<List<Integer>> adj = new ArrayList<>();
+        parent = new int[n];
+        rank = new int[n];
 
         for(int i = 0 ; i < n ; i++){
-            adj.add(new ArrayList<>());
+            parent[i] = i;
         }
-
-        for(int[] ed : edges){
-            int u = ed[0];
-            int v = ed[1];
-
-            adj.get(u).add(v);
-            adj.get(v).add(u);
+        for(int[] e:edges){
+            int u = e[0];
+            int v = e[1];
+            if(find(u)== find(v)) continue;
+            union(u,v);
         }
-
-
-        boolean[] vis = new boolean[n];
-
-        return dfs(src,adj,vis,des);
+        return find(src) == find(des);
     }
 
-    private boolean dfs(int node,List<List<Integer>> adj,boolean[] vis,int des){
-        //Mark visited
-        vis[node] = true;
-
-        if(node == des) return true;
-
-        for(int nbr : adj.get(node)){
-            if(!vis[nbr]){
-               return dfs(nbr,adj,vis,des);
-            }
-        }
-        return false;
-    }
 }
