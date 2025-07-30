@@ -25,7 +25,6 @@ class Solution {
                 int dis = Math.abs(x2-x1) + Math.abs(y2 - y1);
 
                 pq.add(new int[]{u,v,dis});
-                pq.add(new int[]{v,u,dis});
             }
         }
 
