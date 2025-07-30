@@ -1,49 +1,79 @@
 class Solution {
+    int[] parent;
+    int[] rank;
+
 
     public int minCostConnectPoints(int[][] points) {
         int V = points.length;
 
-        boolean[] inMST = new boolean[V];
-        int[] minDist = new int[V];
-        Arrays.fill(minDist, Integer.MAX_VALUE);
-        minDist[0] = 0;
+        parent = new int[V];
+        for(int u = 0 ; u < V ; u++){
+            parent[u] = u;
+        }
+        rank = new int[V];
 
-        PriorityQueue<Pair> pq = new PriorityQueue<>((a, b) -> a.wt - b.wt);
-        pq.add(new Pair(0, 0));
+        PriorityQueue<int[]> pq = new PriorityQueue<>((a,b) -> a[2] - b[2]);
 
-        int cost = 0;
+        for(int u = 0 ; u < V-1 ; u++){
+            int x1 = points[u][0];
+            int y1 = points[u][1];
 
-        while (!pq.isEmpty()) {
-            Pair curr = pq.poll();
-            int u = curr.node;
-            int wt = curr.wt;
+            for(int v = u+1 ; v < V ; v++){
+                int x2 = points[v][0];
+                int y2 = points[v][1];
 
-            if (inMST[u])
-                continue;
+                int dis = Math.abs(x2-x1) + Math.abs(y2 - y1);
 
-            inMST[u] = true;
-            cost += wt;
-
-            for (int v = 0; v < V; v++) {
-                if (!inMST[v]) {
-                    int dist = Math.abs(points[u][0] - points[v][0]) + Math.abs(points[u][1] - points[v][1]);
-                    if (dist < minDist[v]) {
-                        minDist[v] = dist;
-                        pq.add(new Pair(v, dist));
-                    }
-                }
+                pq.add(new int[]{u,v,dis});
+                pq.add(new int[]{v,u,dis});
             }
         }
 
-        return cost;
+        return kruskal(pq);
     }
 
-    static class Pair {
-        int node, wt;
+    int kruskal(PriorityQueue<int[]> pq){
+        int res = 0;
 
-        Pair(int node, int wt) {
-            this.node = node;
-            this.wt = wt;
+        while(!pq.isEmpty()){
+            int[] curr = pq.poll();
+
+            int u = curr[0];
+            int v = curr[1];
+            int w = curr[2];
+
+            if(find(u) != find(v)){
+                res += w;
+                union(u,v);
+            }
         }
+
+        return res;
+    }
+
+
+    void union(int u, int v){
+        int u_parent = find(u);
+        int v_parent = find(v);
+
+        if(u_parent == v_parent){
+            return;
+        }
+
+        if(rank[u_parent] > rank[v_parent]){
+            parent[v_parent] = u_parent;  
+        }else if(rank[u_parent] < rank[v_parent]){
+            parent[u_parent] = v_parent;  
+        }else{
+            parent[v_parent] = u_parent; 
+            rank[u_parent] += 1; 
+        }
+    }
+
+    int find(int u){
+        if(u == parent[u]){
+            return u;
+        }
+        return parent[u] = find(parent[u]);
     }
 }
