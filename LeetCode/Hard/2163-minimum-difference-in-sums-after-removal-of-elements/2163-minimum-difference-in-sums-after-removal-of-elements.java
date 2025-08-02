@@ -21,8 +21,6 @@ class Solution {
             }
         }
 
-        System.out.println(Arrays.toString(leftMinSum));
-
         long[] rightMaxSum = new long[n];
         PriorityQueue<Integer> rightPq = new PriorityQueue<>();
 
@@ -40,7 +38,6 @@ class Solution {
                 rightMaxSum[i] = rightMaxSum[i+1] + nums[i] - rightPq.poll();
             }
         }
-        System.out.println(Arrays.toString(rightMaxSum));
 
         long ans = Long.MAX_VALUE;
 
