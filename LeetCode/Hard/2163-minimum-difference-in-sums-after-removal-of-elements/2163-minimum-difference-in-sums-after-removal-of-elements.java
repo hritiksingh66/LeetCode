@@ -1,52 +1,51 @@
 class Solution {
-    public long minimumDifference(int[] nums){
-        int n = nums.length;
-        int k = n/3;
+    public long minimumDifference(int[] nums) {
+        int N = nums.length;
+        int n = N / 3;
 
-        long[] leftMinSum = new long[n];
-        PriorityQueue<Integer> leftPq = new PriorityQueue<>((a,b) -> b-a);
-        
-        leftMinSum[0] = nums[0];
-        leftPq.add(nums[0]);
+        // ---------- Left Min Sum ----------
+        long[] leftMinSum = new long[N];
+        PriorityQueue<Integer> leftPq = new PriorityQueue<>(Collections.reverseOrder()); // Max-heap
 
-        for(int i = 1 ; i < k ; i++){
-            leftMinSum[i] = nums[i]+leftMinSum[i-1];
+        long leftSum = 0;
+        for (int i = 0; i < 2 * n; i++) {
             leftPq.add(nums[i]);
-        }
+            leftSum += nums[i];
 
-        for(int i = k ; i < 2*k ; i++){
-            leftPq.add(nums[i]);
-            if(leftPq.size() > k){
-                leftMinSum[i] = leftMinSum[i-1] + nums[i] - leftPq.poll();
+            if (leftPq.size() > n) {
+                leftSum -= leftPq.poll();
+            }
+
+            if (i >= n - 1) {
+                leftMinSum[i] = leftSum;
             }
         }
 
-        long[] rightMaxSum = new long[n];
-        PriorityQueue<Integer> rightPq = new PriorityQueue<>();
+        // ---------- Right Max Sum ----------
+        long[] rightMaxSum = new long[N];
+        PriorityQueue<Integer> rightPq = new PriorityQueue<>(); // Min-heap
 
-        rightMaxSum[n-1] = nums[n-1];
-        rightPq.add(nums[n-1]);
-
-        for(int i = n-2 ; i >= n-k ; i--){
-            rightMaxSum[i] = nums[i] + rightMaxSum[i+1];
+        long rightSum = 0;
+        for (int i = N - 1; i >= n; i--) {
             rightPq.add(nums[i]);
-        }
+            rightSum += nums[i];
 
-        for(int i = n-k-1 ; i >= k ; i--){
-            rightPq.add(nums[i]);
-            if(rightPq.size() > k){
-                rightMaxSum[i] = rightMaxSum[i+1] + nums[i] - rightPq.poll();
+            if (rightPq.size() > n) {
+                rightSum -= rightPq.poll();
+            }
+
+            if (i <= 2 * n) {
+                rightMaxSum[i] = rightSum;
             }
         }
 
+        // ---------- Find Minimum Difference ----------
         long ans = Long.MAX_VALUE;
-
-        for(int i = k-1 ; i < 2*k ; i++){
-            long diff = (leftMinSum[i] - rightMaxSum[i+1]);
-            ans = Math.min(diff,ans);
+        for (int i = n - 1; i < 2 * n; i++) {
+            long diff = leftMinSum[i] - rightMaxSum[i + 1];
+            ans = Math.min(ans, diff);
         }
 
         return ans;
-        
     }
 }
