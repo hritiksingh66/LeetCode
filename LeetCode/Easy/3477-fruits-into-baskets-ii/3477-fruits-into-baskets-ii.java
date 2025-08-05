@@ -6,15 +6,14 @@ class Solution {
             for (int j = 0; j < baskets.length; j++) {
                 if (!used[j] && baskets[j] >= fruits[i]) {
                     used[j] = true;
-                    fruits[i] = -1;
                     break;
                 }
             }
         }
 
         int res = 0;
-        for (int f : fruits) {
-            if (f != -1) res++;
+        for (boolean f : used) {
+            if (!f) res++;
         }
 
         return res;
