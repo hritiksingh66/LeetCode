@@ -1,20 +1,18 @@
 class Solution {
-    public int[] getCountFormat(int n){
-        int[] counter = new int[10];
-
-        while(n>0){
-            counter[n%10]++;
+    public int getNumber(int n){
+        int num = 0;
+        while(n > 0){
+            num += Math.pow(10,n%10);
             n/=10;
         }
 
-        return counter;
+        return num;
     }
     public boolean reorderedPowerOf2(int n) {
+        int input = getNumber(n);
 
-        int[] input = getCountFormat(n);
-
-       for (int p = 0; p <= 29; p++) {
-            if (Arrays.equals(input, getCountFormat(1 << p))) {
+        for(int p = 0 ; p <= 29 ; p++){
+            if(input == getNumber(1<<p)){
                 return true;
             }
         }
