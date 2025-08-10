@@ -1,29 +1,24 @@
-import java.util.*;
-
 class Solution {
-    public String sortedStr(int n) {
-        StringBuilder sb = new StringBuilder(n + "");
+    public int[] getCountFormat(int n){
+        int[] counter = new int[10];
 
-        sb.replace(0, sb.length(),
-            sb.toString().chars()
-              .sorted()
-              .collect(StringBuilder::new,
-                       StringBuilder::appendCodePoint,
-                       StringBuilder::append)
-              .toString()
-        );
+        while(n>0){
+            counter[n%10]++;
+            n/=10;
+        }
 
-        return sb.toString();
+        return counter;
     }
-
     public boolean reorderedPowerOf2(int n) {
-        String str = sortedStr(n);
 
-        for (int p = 0; p <= 29; p++) {
-            if (str.equals(sortedStr(1 << p))) {
+        int[] input = getCountFormat(n);
+
+       for (int p = 0; p <= 29; p++) {
+            if (Arrays.equals(input, getCountFormat(1 << p))) {
                 return true;
             }
         }
+
         return false;
     }
 }
