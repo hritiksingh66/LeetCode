@@ -4,9 +4,15 @@ class Solution {
                     .replace(' ', '0');
 
         String reversed = new StringBuilder(binary).reverse().toString();
-            
-        int res = Integer.parseInt(reversed,2);
 
+        int res = 0;
+
+        for(char ch : reversed.toCharArray()){
+            int val = ch-'0';
+            res = res*2 + val;
+
+        }
+    
         return res;
     }
 }
