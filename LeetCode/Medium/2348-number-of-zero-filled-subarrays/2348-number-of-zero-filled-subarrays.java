@@ -8,7 +8,6 @@ class Solution {
                 currSubLen++;
             } else {
                 if (currSubLen > 0) {
-                    System.out.println(currSubLen);
                     res += (long)currSubLen * (currSubLen + 1)/2;
                     currSubLen = 0;
                 }
@@ -16,11 +15,9 @@ class Solution {
         }
 
         if(currSubLen > 0){
-            System.out.println(currSubLen);
             res += (long)currSubLen * (currSubLen + 1)/2;
         }
 
         return res;
-
     }
 }
