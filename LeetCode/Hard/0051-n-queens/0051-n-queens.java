@@ -1,43 +1,17 @@
 class Solution {
     List<List<String>> result;
     int N;
-
-    private boolean isSafe(List<String> board, int row, int col) {
-        
-        // Check column (upward)
-        for (int r = 0; r < row; r++) {
-            if (board.get(r).charAt(col) == 'Q') {
-                return false;
-            }
-        }
-
-        // Check left diagonal
-        int r = row - 1, c = col - 1;
-        while (r >= 0 && c >= 0) {
-            if (board.get(r).charAt(c) == 'Q') {
-                return false;
-            }
-            r--;
-            c--;
-        }
-
-        // Check right diagonal
-        r = row - 1;
-        c = col + 1;
-        while (r >= 0 && c < N) {
-            if (board.get(r).charAt(c) == 'Q') {
-                return false;
-            }
-            r--;
-            c++;
-        }
-
-        return true;
-    }
+    Set<Integer> columns;
+    Set<Integer> diag;
+    Set<Integer> antiDiag;
 
     public List<List<String>> solveNQueens(int n) {
         result = new ArrayList<>();
         N = n;
+
+        columns = new HashSet<>(); 
+        diag = new HashSet<>(); 
+        antiDiag = new HashSet<>(); 
 
         List<String> board = new ArrayList<>();
         for (int i = 0; i < n; i++) {
@@ -55,16 +29,26 @@ class Solution {
         }
 
         for (int col = 0; col < N; col++) {
-            if (isSafe(board, row, col)) {
-                StringBuilder sb = new StringBuilder(board.get(row));
-                sb.setCharAt(col, 'Q');
-                board.set(row, sb.toString());
-
-                solve(row + 1, board);
-
-                sb.setCharAt(col, '.');
-                board.set(row, sb.toString());
+            int diagConst = row - col;
+            int antiDiagConst = row + col;
+            if(columns.contains(col) || diag.contains(diagConst) || antiDiag.contains(antiDiagConst)){
+                continue;
             }
+
+            columns.add(col);
+            diag.add(diagConst);
+            antiDiag.add(antiDiagConst);
+            StringBuilder sb = new StringBuilder(board.get(row));
+            sb.setCharAt(col, 'Q');
+            board.set(row, sb.toString());
+
+            solve(row + 1, board);
+
+            columns.remove(col);
+            diag.remove(diagConst);
+            antiDiag.remove(antiDiagConst);
+            sb.setCharAt(col, '.');
+            board.set(row, sb.toString());
         }
     }
 }
