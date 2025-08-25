@@ -22,7 +22,7 @@ class Solution {
 
         for(List<Integer> li : mp.values()){
             System.out.println(li);
-            if(!flag){
+            if(flag){
                 for(int el : li){
                     ans[pos++] = el;
                 }
