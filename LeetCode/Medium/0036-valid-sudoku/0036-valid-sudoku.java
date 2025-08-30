@@ -1,24 +1,35 @@
 class Solution {
-    public boolean isSafe(char[][] board, int row, int col, char val) {
-        //For Rows
-        for (int i = 0; i <= 8; i++) {
-            if(board[i][col] == val && i!=row)
+    public boolean isSafe(char[][] board,int row , int col , char val){
+        // For Rows 
+        for(int i = 0 ; i < 9 ; i++){
+            if(i==col){
+                continue;
+            }
+
+            if(board[row][i] == val){
                 return false;
+            }
         }
 
-        //For Columns
-        for (int j = 0; j <= 8; j++) {
-            if (board[row][j] == val && j != col)
+        // For cols 
+        for(int i = 0 ; i < 9 ; i++){
+            if(i==row){
+                continue;
+            }
+
+            if(board[i][col] == val){
                 return false;
+            }
         }
 
-        int newRow = row - row % 3;
-        int newCol = col - col % 3;
 
-        // for 3*3 grid
-        for (int i = newRow; i < newRow + 3; i++) {
-            for (int j = newCol; j < newCol + 3; j++) {
-                if (board[i][j] == val && i!=row && j!=col){
+        int r = row - row % 3;
+        int c = col - col % 3;
+
+        for(int i = r ; i < r+3 ; i++){
+            for(int j = c ; j < c+3 ; j++){
+                if(i == row && j == col) continue;
+                if(board[i][j] == val){
                     return false;
                 }
             }
@@ -26,17 +37,13 @@ class Solution {
 
         return true;
     }
+    public boolean isValidSudoku(char[][] board){
 
-    public boolean isValidSudoku(char[][] board) {
-
-        for (int row = 0; row < board.length; row++) {
-            for (int col = 0; col < board[0].length; col++) {
-                char val = board[row][col];
-                if (val != '.') {
-
-                    if(!isSafe(board, row, col, val)){
-                        return false;
-                    }
+        for(int i = 0 ; i < 9 ; i++){
+            for(int j =  0 ; j < 9 ; j++){
+                if(board[i][j] == '.') continue;
+                if(!isSafe(board,i,j,board[i][j])){
+                    return false;
                 }
             }
         }
