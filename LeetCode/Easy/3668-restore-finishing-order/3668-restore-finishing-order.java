@@ -1,8 +1,7 @@
 class Solution {
     public int[] recoverOrder(int[] order, int[] friends){
-        // int n = order.length;
         int m = friends.length;
-
+        int[] res = new int[m];
 
         Set<Integer> set = new HashSet<>();
 
@@ -10,7 +9,6 @@ class Solution {
             set.add(num);
         }
 
-        int[] res = new int[m];
         int pos = 0;
 
         for(int ord : order){
@@ -19,7 +17,6 @@ class Solution {
             }
         }
 
-        return res;
-        
+        return res; 
     }
 }
