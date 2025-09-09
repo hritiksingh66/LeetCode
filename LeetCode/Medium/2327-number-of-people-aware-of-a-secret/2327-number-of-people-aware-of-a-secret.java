@@ -7,16 +7,25 @@ class Solution {
 
         dp[1] = 1; // we already know that till day 1 only one person knew the secret'
 
+        int count = 0; // window sum for range [day - forget + 1 to day - delay] 
         for (int day = 2; day <= n; day++) {
-            int count = 0;
-            for (int prev = day - forget + 1; prev <= day - delay; prev++) {
-                if(prev > 0){
-                    count = (count + dp[prev]) % M;
-                }
+
+            // for (int prev = day - forget + 1; prev <= day - delay; prev++) {
+            //     if(prev > 0){
+            //         count = (count + dp[prev]) % M;
+            //     }
+            // }
+
+            if(day - delay > 0){
+                count = (count + dp[day - delay])%M;
+            }
+
+            if(day - forget > 0){
+                // a - b mod M = (a-b+M)%M; 
+                count = (count - dp[day - forget] + M)%M;
             }
             dp[day] = count;
         }
-
 
         int res = 0;
 
