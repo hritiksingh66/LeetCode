@@ -5,7 +5,7 @@ class Solution {
 
         StringBuilder sb = new StringBuilder();
 
-        if ((num < 0) ^ (den < 0)) {
+        if ((long)num*den < 0) {
             sb.append("-");
         }
 
