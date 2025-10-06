@@ -1,58 +1,53 @@
 class Solution {
-    // Directions for moving up, down, left, right
     private final int[][] directions = {{1,0}, {-1,0}, {0,1}, {0,-1}};
 
     public List<List<Integer>> pacificAtlantic(int[][] heights) {
         List<List<Integer>> result = new ArrayList<>();
-        if (heights == null || heights.length == 0 || heights[0].length == 0) {
+        if (heights == null || heights.length == 0 || heights[0].length == 0)
             return result;
-        }
-        
-        int m = heights.length;
-        int n = heights[0].length;
-        
-        boolean[][] pacificVisited = new boolean[m][n];
-        boolean[][] atlanticVisited = new boolean[m][n];
-        
-        // Start DFS from pacificVisited border (top row and left column)
-        for (int i = 0; i < m; i++) {
-            dfs(heights, pacificVisited, i, 0, Integer.MIN_VALUE);
-            dfs(heights, atlanticVisited, i, n - 1, Integer.MIN_VALUE);
-        }
-        for (int j = 0; j < n; j++) {
-            dfs(heights, pacificVisited, 0, j, Integer.MIN_VALUE);
-            dfs(heights, atlanticVisited, m - 1, j, Integer.MIN_VALUE);
-        }
-        
-        // Collect cells that can reach both oceans
+
+        int m = heights.length, n = heights[0].length;
+        int[][] vis = new int[m][n]; 
+
+        Queue<int[]> pacific = new LinkedList<>();
+        Queue<int[]> atlantic = new LinkedList<>();
+
+        for (int i = 0; i < m; i++) pacific.offer(new int[]{i, 0});
+        for (int j = 0; j < n; j++) pacific.offer(new int[]{0, j});
+
+        for (int i = 0; i < m; i++) atlantic.offer(new int[]{i, n - 1});
+        for (int j = 0; j < n; j++) atlantic.offer(new int[]{m - 1, j});
+
+        bfs(heights, pacific, vis, 1); 
+        bfs(heights, atlantic, vis, 2); 
+
         for (int i = 0; i < m; i++) {
             for (int j = 0; j < n; j++) {
-                if (pacificVisited[i][j] && atlanticVisited[i][j]) {
+                if (vis[i][j] == 3) { 
                     result.add(Arrays.asList(i, j));
                 }
             }
         }
-        
+
         return result;
     }
 
-    private void dfs(int[][] heights, boolean[][] visited, int i, int j, int prevHeight) {
-        int m = heights.length;
-        int n = heights[0].length;
-        
-        // Out of bounds or already visited or not valid move
-        if (i < 0 || i >= m || j < 0 || j >= n 
-            || visited[i][j] || heights[i][j] < prevHeight) {
-            return;
-        }
-        
-        visited[i][j] = true;
-        
-        // Explore 4 directions
-        for (int[] dir : directions) {
-            int ni = i + dir[0];
-            int nj = j + dir[1];
-            dfs(heights, visited, ni, nj, heights[i][j]);
+    private void bfs(int[][] heights, Queue<int[]> queue, int[][] vis, int mark) {
+        int m = heights.length, n = heights[0].length;
+
+        while (!queue.isEmpty()) {
+            int[] cell = queue.poll();
+            int i = cell[0], j = cell[1];
+
+            if ((vis[i][j] & mark) == mark) continue; 
+            vis[i][j] += mark;
+
+            for (int[] dir : directions) {
+                int ni = i + dir[0], nj = j + dir[1];
+                if (ni < 0 || ni >= m || nj < 0 || nj >= n) continue;
+                if (heights[ni][nj] < heights[i][j]) continue; 
+                queue.offer(new int[]{ni, nj});
+            }
         }
     }
 }
