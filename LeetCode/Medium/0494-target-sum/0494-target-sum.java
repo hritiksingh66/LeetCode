@@ -36,7 +36,7 @@ class Solution {
             }
         }
 
-        return dp[n][sum] * (1 << zerosCount);
+        return dp[n][sum];
     }
 
 }
