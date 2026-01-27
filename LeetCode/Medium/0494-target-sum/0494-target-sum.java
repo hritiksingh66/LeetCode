@@ -1,51 +1,42 @@
 class Solution {
-    static int[][] dp;
 
     public int findTargetSumWays(int[] nums, int target) {
         int n = nums.length;
 
-        int sum = 0;
+        int totalSum = 0;
+        int zerosCount = 0;
 
         for (int num : nums) {
-            sum += num;
+            totalSum += num;
+            if(num == 0) zerosCount++;
         }
 
-        if (Math.abs(target) > sum) {
+        if (Math.abs(target) > totalSum) {
             return 0;
         }
 
-
-        sum = (sum + target)/2;
-        
-        if (sum % 2 != 0) {
+        if ((totalSum + target) % 2 != 0) {
             return 0;
         }
 
-        dp = new int[n + 1][sum + 1];
+        int sum = (totalSum + target) / 2;
 
-        for (int i = 0; i <= n; i++) {
-            Arrays.fill(dp[i], -1);
+        int[][] dp = new int[n + 1][sum + 1];
+
+        dp[0][0] = 1;
+
+        // Top-Dowm Approach
+        for (int i = 1; i <= n; i++) {
+            for (int j = 0; j <= sum; j++) {
+                if (nums[i - 1] <= j) {
+                    dp[i][j] = dp[i - 1][j - nums[i - 1]] + dp[i - 1][j];
+                } else {
+                    dp[i][j] = dp[i - 1][j];
+                }
+            }
         }
 
-        return solve(nums, sum, n);
+        return dp[n][sum] * (1 << zerosCount);
     }
 
-    int solve(int[] nums, int sum, int n) {
-        if (n == 0) {
-            return sum == 0 ? 1 : 0;
-        }
-
-        if (dp[n][sum] != -1) {
-            return dp[n][sum];
-        }
-
-        if (nums[n - 1] <= sum) {
-            dp[n][sum] = solve(nums, sum-nums[n-1],n-1) + solve(nums,sum,n-1);
-        }else{
-            dp[n][sum] = solve(nums, sum, n - 1);
-        }
-
-        return dp[n][sum];
-
-    }
 }
