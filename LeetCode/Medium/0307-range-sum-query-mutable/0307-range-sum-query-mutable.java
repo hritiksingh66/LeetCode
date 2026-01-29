@@ -5,7 +5,7 @@ class NumArray {
     public NumArray(int[] nums){
         n = nums.length;
 
-        segTree = new int[2*n-1];
+        segTree = new int[4*n];
 
         buildTree(nums,0,0,n-1);
     }
